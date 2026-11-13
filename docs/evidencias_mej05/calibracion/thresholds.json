@@ -1,0 +1,202 @@
+[
+  {
+    "fold": "D1",
+    "variant": "raw",
+    "fraction": 0.1,
+    "calibration_n": 444,
+    "target_count": 45,
+    "threshold": 0.5700451362968926,
+    "compatible": true,
+    "evaluation": {
+      "tn": 205,
+      "fp": 18,
+      "fn": 118,
+      "tp": 10,
+      "selected": 28,
+      "precision": 0.35714285714285715,
+      "recall": 0.078125
+    }
+  },
+  {
+    "fold": "D1",
+    "variant": "raw",
+    "fraction": 0.2,
+    "calibration_n": 444,
+    "target_count": 89,
+    "threshold": null,
+    "compatible": false,
+    "evaluation": null
+  },
+  {
+    "fold": "D1",
+    "variant": "raw",
+    "fraction": 0.3,
+    "calibration_n": 444,
+    "target_count": 134,
+    "threshold": 0.49303291535959104,
+    "compatible": true,
+    "evaluation": {
+      "tn": 173,
+      "fp": 50,
+      "fn": 98,
+      "tp": 30,
+      "selected": 80,
+      "precision": 0.375,
+      "recall": 0.234375
+    }
+  },
+  {
+    "fold": "D1",
+    "variant": "sigmoid",
+    "fraction": 0.1,
+    "calibration_n": 444,
+    "target_count": 45,
+    "threshold": null,
+    "compatible": false,
+    "evaluation": null
+  },
+  {
+    "fold": "D1",
+    "variant": "sigmoid",
+    "fraction": 0.2,
+    "calibration_n": 444,
+    "target_count": 89,
+    "threshold": 0.5989706935325144,
+    "compatible": true,
+    "evaluation": {
+      "tn": 190,
+      "fp": 33,
+      "fn": 99,
+      "tp": 29,
+      "selected": 62,
+      "precision": 0.46774193548387094,
+      "recall": 0.2265625
+    }
+  },
+  {
+    "fold": "D1",
+    "variant": "sigmoid",
+    "fraction": 0.3,
+    "calibration_n": 444,
+    "target_count": 134,
+    "threshold": 0.5983891598973139,
+    "compatible": true,
+    "evaluation": {
+      "tn": 174,
+      "fp": 49,
+      "fn": 84,
+      "tp": 44,
+      "selected": 93,
+      "precision": 0.4731182795698925,
+      "recall": 0.34375
+    }
+  },
+  {
+    "fold": "D2",
+    "variant": "raw",
+    "fraction": 0.1,
+    "calibration_n": 351,
+    "target_count": 36,
+    "threshold": 0.5989257515310595,
+    "compatible": true,
+    "evaluation": {
+      "tn": 263,
+      "fp": 23,
+      "fn": 190,
+      "tp": 34,
+      "selected": 57,
+      "precision": 0.5964912280701754,
+      "recall": 0.15178571428571427
+    }
+  },
+  {
+    "fold": "D2",
+    "variant": "raw",
+    "fraction": 0.2,
+    "calibration_n": 351,
+    "target_count": 71,
+    "threshold": 0.5723909068530525,
+    "compatible": true,
+    "evaluation": {
+      "tn": 236,
+      "fp": 50,
+      "fn": 168,
+      "tp": 56,
+      "selected": 106,
+      "precision": 0.5283018867924528,
+      "recall": 0.25
+    }
+  },
+  {
+    "fold": "D2",
+    "variant": "raw",
+    "fraction": 0.3,
+    "calibration_n": 351,
+    "target_count": 106,
+    "threshold": 0.5484770455238953,
+    "compatible": true,
+    "evaluation": {
+      "tn": 190,
+      "fp": 96,
+      "fn": 136,
+      "tp": 88,
+      "selected": 184,
+      "precision": 0.4782608695652174,
+      "recall": 0.39285714285714285
+    }
+  },
+  {
+    "fold": "D2",
+    "variant": "sigmoid",
+    "fraction": 0.1,
+    "calibration_n": 351,
+    "target_count": 36,
+    "threshold": 0.3655916412180323,
+    "compatible": true,
+    "evaluation": {
+      "tn": 263,
+      "fp": 23,
+      "fn": 190,
+      "tp": 34,
+      "selected": 57,
+      "precision": 0.5964912280701754,
+      "recall": 0.15178571428571427
+    }
+  },
+  {
+    "fold": "D2",
+    "variant": "sigmoid",
+    "fraction": 0.2,
+    "calibration_n": 351,
+    "target_count": 71,
+    "threshold": 0.3652897534747998,
+    "compatible": true,
+    "evaluation": {
+      "tn": 236,
+      "fp": 50,
+      "fn": 168,
+      "tp": 56,
+      "selected": 106,
+      "precision": 0.5283018867924528,
+      "recall": 0.25
+    }
+  },
+  {
+    "fold": "D2",
+    "variant": "sigmoid",
+    "fraction": 0.3,
+    "calibration_n": 351,
+    "target_count": 106,
+    "threshold": 0.3650218610048033,
+    "compatible": true,
+    "evaluation": {
+      "tn": 190,
+      "fp": 96,
+      "fn": 136,
+      "tp": 88,
+      "selected": 184,
+      "precision": 0.4782608695652174,
+      "recall": 0.39285714285714285
+    }
+  }
+]

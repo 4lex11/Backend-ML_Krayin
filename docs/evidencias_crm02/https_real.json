@@ -1,0 +1,39 @@
+{
+  "prediction_from_database": {
+    "status": "success",
+    "customer_id": "AA-10315",
+    "as_of": "2018-06-30",
+    "predicted_at": "2026-10-28T18:35:24.958632Z",
+    "model_version": "churn180-v1",
+    "schema_version": "churn180-v1",
+    "horizon_days": 180,
+    "probabilidad_churn": 0.3400690869680104,
+    "categoria_riesgo": "Medio",
+    "accion_sugerida": "Revisión humana; modelo experimental sin utilidad predictiva demostrada.",
+    "model_status": "experimental",
+    "automatic_action_allowed": false,
+    "limited_history": true
+  },
+  "matches_temporal_test_probability": true,
+  "invalid_key": {
+    "reason": "http_error",
+    "http_status": 401,
+    "attempts": 1
+  },
+  "invalid_data": {
+    "reason": "http_error",
+    "http_status": 422,
+    "attempts": 1
+  },
+  "invalid_ca_rejected": {
+    "reason": "transport_or_tls_error",
+    "http_status": null,
+    "attempts": 1
+  },
+  "service_stopped": {
+    "reason": "retries_exhausted",
+    "http_status": null,
+    "attempts": 3
+  },
+  "passed": true
+}

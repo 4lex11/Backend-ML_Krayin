@@ -1,0 +1,33 @@
+........................................................................ [ 73%]
+..........................                                               [100%]
+============================== warnings summary ===============================
+.venv-clean\Lib\site-packages\fastapi\testclient.py:1
+  C:\Users\Alex11\Documents\Trabajo de Investigacion\.venv-clean\Lib\site-packages\fastapi\testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+    from starlette.testclient import TestClient as TestClient  # noqa
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=============================== tests coverage ================================
+_______________ coverage: platform win32, python 3.14.6-final-0 _______________
+
+Name                    Stmts   Miss  Cover   Missing
+-----------------------------------------------------
+ML\__init__.py              0      0   100%
+ML\evaluation.py           24      0   100%
+ML\features.py             50      0   100%
+ML\figures.py              84      0   100%
+ML\inference.py            66      0   100%
+ML\threshold_study.py     103      7    93%   84, 219-225, 229
+ML\train.py               118      8    93%   129, 288-293, 297
+backend\__init__.py         0      0   100%
+backend\main.py           146      1    99%   69
+backend\schemas.py         36      0   100%
+backend\security.py        64      2    97%   104-105
+backend\serve.py           41      8    80%   49-51, 73-76, 80
+deploy\__init__.py          0      0   100%
+deploy\acceptance.py       68      9    87%   54, 97-103, 107
+deploy\release.py          73      4    95%   40, 46, 106, 112
+deploy\runtime.py          52      6    88%   108-112, 116
+-----------------------------------------------------
+TOTAL                     925     45    95%
+Required test coverage of 90.0% reached. Total coverage: 95.14%
+98 passed, 1 warning in 12.98s

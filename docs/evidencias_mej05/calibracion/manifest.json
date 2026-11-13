@@ -1,0 +1,19 @@
+{
+  "status": "complete",
+  "trained_models": 0,
+  "E1_used": false,
+  "code_sha256": "25384ed881048ab1d28d9fa6e483d3e3ef208ce6e863ba0a88aa309b27f0358a",
+  "comparison_status_sha256": "69aa02bed8f5da37e991bed2fe9b19dc23ec0938ed9fd9774f2699ead73b4958",
+  "files": {
+    "analysis_plan.json": "d8a8fdee6c40c3bad809fc361c7c0e57e81c077f4907e84e48f71fdc24e705f9",
+    "calibration_bins.json": "30fbcc9dab459c94078acda84313a2b6df6a752fa26dcbeb4884f8c49250ebc9",
+    "D1_raw.csv": "3bde305ccfdc586b0453c8a6efe01b820f40932e2b4104032b45ce176288b93a",
+    "D1_sigmoid.csv": "651d26836ad4c991d780aa7f9cc92278159c61ddd30e0695d49e14770fb31238",
+    "D2_raw.csv": "6c1d289d215125e4cc9797716bdee2c2749e19397aa0afd70dbfeb492481924c",
+    "D2_sigmoid.csv": "1c3b76a0264c85645ba14699ae562e99bce3337672ac7e834e8184d6b4b92780",
+    "frozen_policy.json": "5f38ac97d35df87eabcad14df285712d07d0a88d2091cecc16c9058533a9ec0f",
+    "metrics.json": "28ed51aec872204eda9f3ce84a9f4ff78b77372e23d7ab1e5a4f3d64aace28a0",
+    "summary.json": "4fd8cb79b8db0eb0cd3a7a7e7feaeb44f1f8328f423962063724f9cf0884df1f",
+    "thresholds.json": "2fe91c554c0c13ea61488037ade2a570b16e6a7a4e0289bb6c72f303a5005d99"
+  }
+}

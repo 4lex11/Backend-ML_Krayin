@@ -1,0 +1,179 @@
+{
+  "stage": "MEJ-03",
+  "trained_models": 0,
+  "protocol_sha256": "eedf2bf7e5993246af8efd4c76f4526a08611961f38797146b2b62acf823df2a",
+  "dataset_sha256": "dbb0f167b27ccf02d7ff8cb0446a9abc6dbc3522e83cf9daa6939801acfdd196",
+  "quality": {
+    "input_rows": 9800,
+    "clean_rows": 9800,
+    "exact_duplicates_removed": 0,
+    "customers": 793,
+    "orders": 4922,
+    "min_date": "2015-01-03",
+    "max_date": "2018-12-30",
+    "ignored_missing_postal_codes": 11
+  },
+  "feature_sets": {
+    "original": [
+      "Recency",
+      "Frequency",
+      "Monetary_Sum",
+      "Monetary_Mean",
+      "Monetary_Std",
+      "Cat_Count",
+      "SubCat_Count"
+    ],
+    "temporal": [
+      "Orders_30d",
+      "Orders_90d",
+      "Orders_180d",
+      "Sales_30d",
+      "Sales_90d",
+      "Sales_180d",
+      "Recent90_To_Prior90_Order_Ratio",
+      "ActiveMonths_365d",
+      "MeanOrderGapDays",
+      "StdOrderGapDays",
+      "HasMultipleOrders"
+    ],
+    "combined": [
+      "Recency",
+      "Frequency",
+      "Monetary_Sum",
+      "Monetary_Mean",
+      "Monetary_Std",
+      "Cat_Count",
+      "SubCat_Count",
+      "Orders_30d",
+      "Orders_90d",
+      "Orders_180d",
+      "Sales_30d",
+      "Sales_90d",
+      "Sales_180d",
+      "Recent90_To_Prior90_Order_Ratio",
+      "ActiveMonths_365d",
+      "MeanOrderGapDays",
+      "StdOrderGapDays",
+      "HasMultipleOrders"
+    ]
+  },
+  "folds": [
+    {
+      "id": "D1",
+      "usable_for_selection": true,
+      "roles": {
+        "train": {
+          "rows": 286,
+          "unique_customers": 286,
+          "churn": 119,
+          "cutoffs": [
+            "2016-06-30"
+          ],
+          "file": "D1/train.csv",
+          "sha256": "85e7721cab4a8e82ee863f58b441653de7d336ee7bbde114373a50126db5abdf"
+        },
+        "calibration": {
+          "rows": 444,
+          "unique_customers": 444,
+          "churn": 265,
+          "cutoffs": [
+            "2016-12-31"
+          ],
+          "file": "D1/calibration.csv",
+          "sha256": "deb3409cd0800e720687935c88622be0b487ca54523beb4e8c67e633ad4f7fea"
+        },
+        "evaluation": {
+          "rows": 351,
+          "unique_customers": 351,
+          "churn": 128,
+          "cutoffs": [
+            "2017-06-30"
+          ],
+          "file": "D1/evaluation.csv",
+          "sha256": "27de92150b5273291a141fd5c12cbbe96cbaa7334191756890394f9797795691"
+        }
+      }
+    },
+    {
+      "id": "D2",
+      "usable_for_selection": true,
+      "roles": {
+        "train": {
+          "rows": 730,
+          "unique_customers": 566,
+          "churn": 384,
+          "cutoffs": [
+            "2016-06-30",
+            "2016-12-31"
+          ],
+          "file": "D2/train.csv",
+          "sha256": "fc52b656952fe7828fc5184817629519b6e635cd4072a5fbb02d970b5a077cd5"
+        },
+        "calibration": {
+          "rows": 351,
+          "unique_customers": 351,
+          "churn": 128,
+          "cutoffs": [
+            "2017-06-30"
+          ],
+          "file": "D2/calibration.csv",
+          "sha256": "27de92150b5273291a141fd5c12cbbe96cbaa7334191756890394f9797795691"
+        },
+        "evaluation": {
+          "rows": 510,
+          "unique_customers": 510,
+          "churn": 224,
+          "cutoffs": [
+            "2017-12-31"
+          ],
+          "file": "D2/evaluation.csv",
+          "sha256": "ba5ad35dae9efce794b67e36e8a70da21ed2d570606ec7a5e628a19b3921ae38"
+        }
+      }
+    },
+    {
+      "id": "E1",
+      "usable_for_selection": false,
+      "roles": {
+        "train": {
+          "rows": 1081,
+          "unique_customers": 678,
+          "churn": 512,
+          "cutoffs": [
+            "2016-06-30",
+            "2016-12-31",
+            "2017-06-30"
+          ],
+          "file": "E1/train.csv",
+          "sha256": "548510d92b88d3c172eb461cf3edc2de7e5b33bd05c8a1d1bfbf828200c59338"
+        },
+        "calibration": {
+          "rows": 510,
+          "unique_customers": 510,
+          "churn": 224,
+          "cutoffs": [
+            "2017-12-31"
+          ],
+          "file": "E1/calibration.csv",
+          "sha256": "ba5ad35dae9efce794b67e36e8a70da21ed2d570606ec7a5e628a19b3921ae38"
+        },
+        "evaluation": {
+          "rows": 431,
+          "unique_customers": 431,
+          "churn": 101,
+          "cutoffs": [
+            "2018-06-30"
+          ],
+          "file": "E1/evaluation.csv",
+          "sha256": "8a76a90b146385dabb70960cab5958569d7df9bfb17cc9c6ea4aaf5fa91277a9"
+        }
+      }
+    }
+  ],
+  "limitations": "E1 ya fue observado; aceptación exploratoria, no selección ni test independiente.",
+  "code_sha256": {
+    "ML/features.py": "286e676224b6a0aa863551b1783e21d672ae2f71966294bbed46c9822251d5fc",
+    "ML/features_v2.py": "c272e5759b6d09743515dcaa183ae7ce20356b129c007146b717f1184bf1f7b4",
+    "ML/temporal_validation.py": "e7a945bfbb66b0495f7fd2d9989b1f95cb677d341b8b3745d8f6846f2453a6d4"
+  }
+}

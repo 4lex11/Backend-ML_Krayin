@@ -1,0 +1,29 @@
+{
+    "persons": {
+        "count": 793,
+        "sha256": "ec1c6d66b4a3afc51a0d9d827737a285b8dc5e5da6204a86508145074ed8c500"
+    },
+    "attribute_values": {
+        "count": 3965,
+        "sha256": "4a004a1c420dfce29bc33fd57663700436075bedae6c2f9f3a1fa1b3f12453c0"
+    },
+    "churn_sales_lines": {
+        "count": 9800,
+        "sha256": "ea7e0eaee07461fb2007a77df6228020767f57b0d8c6dd89d23f8090c96f0e5b"
+    },
+    "churn_dataset_customers": {
+        "count": 793,
+        "sha256": "098e421ec59b5684a0088479ce8fedf8c628758f85455a03e895825cbf2d6da7"
+    },
+    "predictions": 1,
+    "pending_work": 0,
+    "qa_reviews": 0,
+    "qa_accounts": 0,
+    "reviews": 0,
+    "migrations": [
+        "2026_10_28_000001_create_churn_dataset_tables",
+        "2026_10_28_000002_create_churn_prediction_tables",
+        "2026_10_29_000003_create_churn_work_items_table",
+        "2026_10_29_000004_create_churn_reviews_table"
+    ]
+}

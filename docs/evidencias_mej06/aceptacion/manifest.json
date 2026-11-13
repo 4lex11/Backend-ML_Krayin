@@ -1,0 +1,17 @@
+{
+  "status": "complete",
+  "code_sha256": "1fce4260e6bc71ad6b5f1934be60ca3ab669ad11074738de59eaab26039d1161",
+  "policy_sha256": "5f38ac97d35df87eabcad14df285712d07d0a88d2091cecc16c9058533a9ec0f",
+  "files": {
+    "bootstrap.json": "28c1e7c7df93e88ff1218a18f0895dfa1b7fb87d4f63e93bcbd1fbb701644c85",
+    "D1_predictions.csv": "29d60b364e8baa78b725a96525115b0fcc26eb979a0551aa5582d998fd3f4e77",
+    "D2_predictions.csv": "2915bc7c0d99f1e80c8e074306d8a6de39524b5e083d986fae22309ff2c03cc3",
+    "decision.json": "2717b53331bec7a66d1a5880827904e2bf8409822e4dd60bfb4e7c530528b099",
+    "E1_candidate.joblib": "f290a4cc634b2f17112d06f448eb2cbf01b697281d9717ba8f36111373210d82",
+    "E1_predictions.csv": "f9e5950329696775c23239482aceda649355ecce5b13af973b0f73e9bb341462",
+    "E1_recipe.joblib": "29d1d6880cc739dfc6df337d77ce1ec2c2576c6853dff27bdb51472344f7c809",
+    "frozen_policy.json": "5f38ac97d35df87eabcad14df285712d07d0a88d2091cecc16c9058533a9ec0f",
+    "metrics.json": "682211b0ab6838c78cba4f2acb4639fb32181151f4b85817b9b7e1b2ffad2f61",
+    "thresholds.json": "39f323850f120b436528fd7a139cf73f98eb54a0184254dc76e5eb53c75587b3"
+  }
+}

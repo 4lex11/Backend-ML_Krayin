@@ -1,0 +1,294 @@
+
+  ...................................................!!!!!!!!!!!!!!!!
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  
+   DEPRECATED  Tests\Feature\ChurnDatasetTest > it dry runs without creating contacts mappings or sales                 
+  Constant PDO::MYSQL_ATTR_SSL_CA is deprecated since 8.5, use Pdo\Mysql::ATTR_SSL_CA instead
+
+  at config\database.php:62
+     58▕             'prefix_indexes' => true,
+     59▕             'strict' => false,
+     60▕             'engine' => null,
+     61▕             'options' => extension_loaded('pdo_mysql') ? array_filter([
+  ➜  62▕                 PDO::MYSQL_ATTR_SSL_CA => env('MYSQL_ATTR_SSL_CA'),
+     63▕             ]) : [],
+     64▕         ],
+     65▕ 
+     66▕         'mariadb' => [
+
+  1   vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\LoadConfiguration.php:115
+  2   vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\LoadConfiguration.php:115
+
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  
+   DEPRECATED  Tests\Feature\ChurnDatasetTest > it creates demo contacts once and repeats without duplicates            
+  Constant PDO::MYSQL_ATTR_SSL_CA is deprecated since 8.5, use Pdo\Mysql::ATTR_SSL_CA instead
+
+  at config\database.php:62
+     58▕             'prefix_indexes' => true,
+     59▕             'strict' => false,
+     60▕             'engine' => null,
+     61▕             'options' => extension_loaded('pdo_mysql') ? array_filter([
+  ➜  62▕                 PDO::MYSQL_ATTR_SSL_CA => env('MYSQL_ATTR_SSL_CA'),
+     63▕             ]) : [],
+     64▕         ],
+     65▕ 
+     66▕         'mariadb' => [
+
+  1   vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\LoadConfiguration.php:115
+  2   vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\LoadConfiguration.php:115
+
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  
+   DEPRECATED  Tests\Feature\ChurnDatasetTest > it reuses legacy contacts by attribute code and preserves their fiel…   
+  Constant PDO::MYSQL_ATTR_SSL_CA is deprecated since 8.5, use Pdo\Mysql::ATTR_SSL_CA instead
+
+  at config\database.php:62
+     58▕             'prefix_indexes' => true,
+     59▕             'strict' => false,
+     60▕             'engine' => null,
+     61▕             'options' => extension_loaded('pdo_mysql') ? array_filter([
+  ➜  62▕                 PDO::MYSQL_ATTR_SSL_CA => env('MYSQL_ATTR_SSL_CA'),
+     63▕             ]) : [],
+     64▕         ],
+     65▕ 
+     66▕         'mariadb' => [
+
+  1   vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\LoadConfiguration.php:115
+  2   vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\LoadConfiguration.php:115
+
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  
+   DEPRECATED  Tests\Feature\ChurnDatasetTest > it rolls back a conflicting line including any earlier inserts          
+  Constant PDO::MYSQL_ATTR_SSL_CA is deprecated since 8.5, use Pdo\Mysql::ATTR_SSL_CA instead
+
+  at config\database.php:62
+     58▕             'prefix_indexes' => true,
+     59▕             'strict' => false,
+     60▕             'engine' => null,
+     61▕             'options' => extension_loaded('pdo_mysql') ? array_filter([
+  ➜  62▕                 PDO::MYSQL_ATTR_SSL_CA => env('MYSQL_ATTR_SSL_CA'),
+     63▕             ]) : [],
+     64▕         ],
+     65▕ 
+     66▕         'mariadb' => [
+
+  1   vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\LoadConfiguration.php:115
+  2   vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\LoadConfiguration.php:115
+
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  
+   DEPRECATED  Tests\Feature\ChurnDatasetTest > it rejects a different dataset and inactive or missing owner            
+  Constant PDO::MYSQL_ATTR_SSL_CA is deprecated since 8.5, use Pdo\Mysql::ATTR_SSL_CA instead
+
+  at config\database.php:62
+     58▕             'prefix_indexes' => true,
+     59▕             'strict' => false,
+     60▕             'engine' => null,
+     61▕             'options' => extension_loaded('pdo_mysql') ? array_filter([
+  ➜  62▕                 PDO::MYSQL_ATTR_SSL_CA => env('MYSQL_ATTR_SSL_CA'),
+     63▕             ]) : [],
+     64▕         ],
+     65▕ 
+     66▕         'mariadb' => [
+
+  1   vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\LoadConfiguration.php:115
+  2   vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\LoadConfiguration.php:115
+
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  
+   DEPRECATED  Tests\Feature\ChurnDatasetTest > it rejects ambiguous legacy IDs without linking or importing sales      
+  Constant PDO::MYSQL_ATTR_SSL_CA is deprecated since 8.5, use Pdo\Mysql::ATTR_SSL_CA instead
+
+  at config\database.php:62
+     58▕             'prefix_indexes' => true,
+     59▕             'strict' => false,
+     60▕             'engine' => null,
+     61▕             'options' => extension_loaded('pdo_mysql') ? array_filter([
+  ➜  62▕                 PDO::MYSQL_ATTR_SSL_CA => env('MYSQL_ATTR_SSL_CA'),
+     63▕             ]) : [],
+     64▕         ],
+     65▕ 
+     66▕         'mariadb' => [
+
+  1   vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\LoadConfiguration.php:115
+  2   vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\LoadConfiguration.php:115
+
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  
+   DEPRECATED  Tests\Feature\ChurnDatasetTest > it rejects an unrecognized CSV before writing any data                  
+  Constant PDO::MYSQL_ATTR_SSL_CA is deprecated since 8.5, use Pdo\Mysql::ATTR_SSL_CA instead
+
+  at config\database.php:62
+     58▕             'prefix_indexes' => true,
+     59▕             'strict' => false,
+     60▕             'engine' => null,
+     61▕             'options' => extension_loaded('pdo_mysql') ? array_filter([
+  ➜  62▕                 PDO::MYSQL_ATTR_SSL_CA => env('MYSQL_ATTR_SSL_CA'),
+     63▕             ]) : [],
+     64▕         ],
+     65▕ 
+     66▕         'mariadb' => [
+
+  1   vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\LoadConfiguration.php:115
+  2   vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\LoadConfiguration.php:115
+
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  
+   DEPRECATED  Tests\Feature\ChurnPredictionTest > it stores traced predictions and commits run status together         
+  Constant PDO::MYSQL_ATTR_SSL_CA is deprecated since 8.5, use Pdo\Mysql::ATTR_SSL_CA instead
+
+  at config\database.php:62
+     58▕             'prefix_indexes' => true,
+     59▕             'strict' => false,
+     60▕             'engine' => null,
+     61▕             'options' => extension_loaded('pdo_mysql') ? array_filter([
+  ➜  62▕                 PDO::MYSQL_ATTR_SSL_CA => env('MYSQL_ATTR_SSL_CA'),
+     63▕             ]) : [],
+     64▕         ],
+     65▕ 
+     66▕         'mariadb' => [
+
+  1   vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\LoadConfiguration.php:115
+  2   vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\LoadConfiguration.php:115
+
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  
+   DEPRECATED  Tests\Feature\ChurnPredictionTest > it reuses an identical prediction without replacing its original…    
+  Constant PDO::MYSQL_ATTR_SSL_CA is deprecated since 8.5, use Pdo\Mysql::ATTR_SSL_CA instead
+
+  at config\database.php:62
+     58▕             'prefix_indexes' => true,
+     59▕             'strict' => false,
+     60▕             'engine' => null,
+     61▕             'options' => extension_loaded('pdo_mysql') ? array_filter([
+  ➜  62▕                 PDO::MYSQL_ATTR_SSL_CA => env('MYSQL_ATTR_SSL_CA'),
+     63▕             ]) : [],
+     64▕         ],
+     65▕ 
+     66▕         'mariadb' => [
+
+  1   vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\LoadConfiguration.php:115
+  2   vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\LoadConfiguration.php:115
+
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  
+   DEPRECATED  Tests\Feature\ChurnPredictionTest > it preserves the valid prediction when a repeat fails                
+  Constant PDO::MYSQL_ATTR_SSL_CA is deprecated since 8.5, use Pdo\Mysql::ATTR_SSL_CA instead
+
+  at config\database.php:62
+     58▕             'prefix_indexes' => true,
+     59▕             'strict' => false,
+     60▕             'engine' => null,
+     61▕             'options' => extension_loaded('pdo_mysql') ? array_filter([
+  ➜  62▕                 PDO::MYSQL_ATTR_SSL_CA => env('MYSQL_ATTR_SSL_CA'),
+     63▕             ]) : [],
+     64▕         ],
+     65▕ 
+     66▕         'mariadb' => [
+
+  1   vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\LoadConfiguration.php:115
+  2   vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\LoadConfiguration.php:115
+
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  
+   DEPRECATED  Tests\Feature\ChurnPredictionTest > it rejects conflicting input or results for the same identity wit…   
+  Constant PDO::MYSQL_ATTR_SSL_CA is deprecated since 8.5, use Pdo\Mysql::ATTR_SSL_CA instead
+
+  at config\database.php:62
+     58▕             'prefix_indexes' => true,
+     59▕             'strict' => false,
+     60▕             'engine' => null,
+     61▕             'options' => extension_loaded('pdo_mysql') ? array_filter([
+  ➜  62▕                 PDO::MYSQL_ATTR_SSL_CA => env('MYSQL_ATTR_SSL_CA'),
+     63▕             ]) : [],
+     64▕         ],
+     65▕ 
+     66▕         'mariadb' => [
+
+  1   vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\LoadConfiguration.php:115
+  2   vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\LoadConfiguration.php:115
+
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  
+   DEPRECATED  Tests\Feature\ChurnPredictionTest > it rejects conflicting input or results for the same identity wit…   
+  Constant PDO::MYSQL_ATTR_SSL_CA is deprecated since 8.5, use Pdo\Mysql::ATTR_SSL_CA instead
+
+  at config\database.php:62
+     58▕             'prefix_indexes' => true,
+     59▕             'strict' => false,
+     60▕             'engine' => null,
+     61▕             'options' => extension_loaded('pdo_mysql') ? array_filter([
+  ➜  62▕                 PDO::MYSQL_ATTR_SSL_CA => env('MYSQL_ATTR_SSL_CA'),
+     63▕             ]) : [],
+     64▕         ],
+     65▕ 
+     66▕         'mariadb' => [
+
+  1   vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\LoadConfiguration.php:115
+  2   vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\LoadConfiguration.php:115
+
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  
+   DEPRECATED  Tests\Feature\ChurnPredictionTest > it retains separate versions and cuts ordered by observation date    
+  Constant PDO::MYSQL_ATTR_SSL_CA is deprecated since 8.5, use Pdo\Mysql::ATTR_SSL_CA instead
+
+  at config\database.php:62
+     58▕             'prefix_indexes' => true,
+     59▕             'strict' => false,
+     60▕             'engine' => null,
+     61▕             'options' => extension_loaded('pdo_mysql') ? array_filter([
+  ➜  62▕                 PDO::MYSQL_ATTR_SSL_CA => env('MYSQL_ATTR_SSL_CA'),
+     63▕             ]) : [],
+     64▕         ],
+     65▕ 
+     66▕         'mariadb' => [
+
+  1   vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\LoadConfiguration.php:115
+  2   vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\LoadConfiguration.php:115
+
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  
+   DEPRECATED  Tests\Feature\ChurnPredictionTest > it does not store secrets from unexpected errors                     
+  Constant PDO::MYSQL_ATTR_SSL_CA is deprecated since 8.5, use Pdo\Mysql::ATTR_SSL_CA instead
+
+  at config\database.php:62
+     58▕             'prefix_indexes' => true,
+     59▕             'strict' => false,
+     60▕             'engine' => null,
+     61▕             'options' => extension_loaded('pdo_mysql') ? array_filter([
+  ➜  62▕                 PDO::MYSQL_ATTR_SSL_CA => env('MYSQL_ATTR_SSL_CA'),
+     63▕             ]) : [],
+     64▕         ],
+     65▕ 
+     66▕         'mariadb' => [
+
+  1   vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\LoadConfiguration.php:115
+  2   vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\LoadConfiguration.php:115
+
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  
+   DEPRECATED  Tests\Feature\ChurnPredictionTest > it rejects responses for another customer or automatic actions wi…   
+  Constant PDO::MYSQL_ATTR_SSL_CA is deprecated since 8.5, use Pdo\Mysql::ATTR_SSL_CA instead
+
+  at config\database.php:62
+     58▕             'prefix_indexes' => true,
+     59▕             'strict' => false,
+     60▕             'engine' => null,
+     61▕             'options' => extension_loaded('pdo_mysql') ? array_filter([
+  ➜  62▕                 PDO::MYSQL_ATTR_SSL_CA => env('MYSQL_ATTR_SSL_CA'),
+     63▕             ]) : [],
+     64▕         ],
+     65▕ 
+     66▕         'mariadb' => [
+
+  1   vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\LoadConfiguration.php:115
+  2   vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\LoadConfiguration.php:115
+
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  
+   DEPRECATED  Tests\Feature\ChurnPredictionTest > it rejects responses for another customer or automatic actions wi…   
+  Constant PDO::MYSQL_ATTR_SSL_CA is deprecated since 8.5, use Pdo\Mysql::ATTR_SSL_CA instead
+
+  at config\database.php:62
+     58▕             'prefix_indexes' => true,
+     59▕             'strict' => false,
+     60▕             'engine' => null,
+     61▕             'options' => extension_loaded('pdo_mysql') ? array_filter([
+  ➜  62▕                 PDO::MYSQL_ATTR_SSL_CA => env('MYSQL_ATTR_SSL_CA'),
+     63▕             ]) : [],
+     64▕         ],
+     65▕ 
+     66▕         'mariadb' => [
+
+  1   vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\LoadConfiguration.php:115
+  2   vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\LoadConfiguration.php:115
+
+
+  Tests:    16 deprecated, 51 passed (183 assertions)
+  Duration: 3.76s
+

@@ -1,0 +1,1087 @@
+
+  ...................................................⨯⨯⨯⨯⨯⨯⨯⨯⨯⨯⨯⨯⨯⨯⨯⨯⨯⨯⨯⨯⨯⨯⨯⨯⨯⨯⨯⨯⨯⨯⨯⨯⨯⨯⨯⨯⨯⨯⨯⨯⨯⨯⨯⨯⨯⨯⨯⨯⨯⨯⨯⨯⨯⨯⨯⨯⨯⨯⨯⨯!!!!!
+  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  
+   FAILED  Tests\Feature\ChurnDatasetTest > it dry runs without creating contacts mappings or sales      PDOException   
+  SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+
+  at vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:67
+     63▕     protected function createPdoConnection($dsn, $username, #[\SensitiveParameter] $password, $options)
+     64▕     {
+     65▕         return version_compare(PHP_VERSION, '8.4.0', '<')
+     66▕             ? new PDO($dsn, $username, $password, $options)
+  ➜  67▕             : PDO::connect($dsn, $username, $password, $options); /** @phpstan-ignore staticMethod.notFound (PHP 8.4) */
+     68▕     }
+     69▕ 
+     70▕     /**
+     71▕      * Handle an exception that occurred during connect execution.
+
+  1   vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:67
+  2   vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:44
+
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  
+   FAILED  Tests\Feature\ChurnDatasetTest > it creates demo contacts once and repeats without duplicat…  PDOException   
+  SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+
+  at vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:67
+     63▕     protected function createPdoConnection($dsn, $username, #[\SensitiveParameter] $password, $options)
+     64▕     {
+     65▕         return version_compare(PHP_VERSION, '8.4.0', '<')
+     66▕             ? new PDO($dsn, $username, $password, $options)
+  ➜  67▕             : PDO::connect($dsn, $username, $password, $options); /** @phpstan-ignore staticMethod.notFound (PHP 8.4) */
+     68▕     }
+     69▕ 
+     70▕     /**
+     71▕      * Handle an exception that occurred during connect execution.
+
+  1   vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:67
+  2   vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:44
+
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  
+   FAILED  Tests\Feature\ChurnDatasetTest > it reuses legacy contacts by attribute code and preserves…   PDOException   
+  SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+
+  at vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:67
+     63▕     protected function createPdoConnection($dsn, $username, #[\SensitiveParameter] $password, $options)
+     64▕     {
+     65▕         return version_compare(PHP_VERSION, '8.4.0', '<')
+     66▕             ? new PDO($dsn, $username, $password, $options)
+  ➜  67▕             : PDO::connect($dsn, $username, $password, $options); /** @phpstan-ignore staticMethod.notFound (PHP 8.4) */
+     68▕     }
+     69▕ 
+     70▕     /**
+     71▕      * Handle an exception that occurred during connect execution.
+
+  1   vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:67
+  2   vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:44
+
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  
+   FAILED  Tests\Feature\ChurnDatasetTest > it rolls back a conflicting line including any earlier ins…  PDOException   
+  SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+
+  at vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:67
+     63▕     protected function createPdoConnection($dsn, $username, #[\SensitiveParameter] $password, $options)
+     64▕     {
+     65▕         return version_compare(PHP_VERSION, '8.4.0', '<')
+     66▕             ? new PDO($dsn, $username, $password, $options)
+  ➜  67▕             : PDO::connect($dsn, $username, $password, $options); /** @phpstan-ignore staticMethod.notFound (PHP 8.4) */
+     68▕     }
+     69▕ 
+     70▕     /**
+     71▕      * Handle an exception that occurred during connect execution.
+
+  1   vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:67
+  2   vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:44
+
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  
+   FAILED  Tests\Feature\ChurnDatasetTest > it rejects a different dataset and inactive or missing own…  PDOException   
+  SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+
+  at vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:67
+     63▕     protected function createPdoConnection($dsn, $username, #[\SensitiveParameter] $password, $options)
+     64▕     {
+     65▕         return version_compare(PHP_VERSION, '8.4.0', '<')
+     66▕             ? new PDO($dsn, $username, $password, $options)
+  ➜  67▕             : PDO::connect($dsn, $username, $password, $options); /** @phpstan-ignore staticMethod.notFound (PHP 8.4) */
+     68▕     }
+     69▕ 
+     70▕     /**
+     71▕      * Handle an exception that occurred during connect execution.
+
+  1   vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:67
+  2   vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:44
+
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  
+   FAILED  Tests\Feature\ChurnDatasetTest > it rejects ambiguous legacy IDs without linking or importi…  PDOException   
+  SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+
+  at vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:67
+     63▕     protected function createPdoConnection($dsn, $username, #[\SensitiveParameter] $password, $options)
+     64▕     {
+     65▕         return version_compare(PHP_VERSION, '8.4.0', '<')
+     66▕             ? new PDO($dsn, $username, $password, $options)
+  ➜  67▕             : PDO::connect($dsn, $username, $password, $options); /** @phpstan-ignore staticMethod.notFound (PHP 8.4) */
+     68▕     }
+     69▕ 
+     70▕     /**
+     71▕      * Handle an exception that occurred during connect execution.
+
+  1   vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:67
+  2   vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:44
+
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  
+   FAILED  Tests\Feature\ChurnDatasetTest > it rejects an unrecognized CSV before writing any data       PDOException   
+  SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+
+  at vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:67
+     63▕     protected function createPdoConnection($dsn, $username, #[\SensitiveParameter] $password, $options)
+     64▕     {
+     65▕         return version_compare(PHP_VERSION, '8.4.0', '<')
+     66▕             ? new PDO($dsn, $username, $password, $options)
+  ➜  67▕             : PDO::connect($dsn, $username, $password, $options); /** @phpstan-ignore staticMethod.notFound (PHP 8.4) */
+     68▕     }
+     69▕ 
+     70▕     /**
+     71▕      * Handle an exception that occurred during connect execution.
+
+  1   vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:67
+  2   vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:44
+
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  
+   FAILED  Tests\Feature\ChurnPredictionTest > it stores traced predictions and commits run status tog…  PDOException   
+  SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+
+  at vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:67
+     63▕     protected function createPdoConnection($dsn, $username, #[\SensitiveParameter] $password, $options)
+     64▕     {
+     65▕         return version_compare(PHP_VERSION, '8.4.0', '<')
+     66▕             ? new PDO($dsn, $username, $password, $options)
+  ➜  67▕             : PDO::connect($dsn, $username, $password, $options); /** @phpstan-ignore staticMethod.notFound (PHP 8.4) */
+     68▕     }
+     69▕ 
+     70▕     /**
+     71▕      * Handle an exception that occurred during connect execution.
+
+  1   vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:67
+  2   vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:44
+
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  
+   FAILED  Tests\Feature\ChurnPredictionTest > it reuses an identical prediction without replacing its…  PDOException   
+  SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+
+  at vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:67
+     63▕     protected function createPdoConnection($dsn, $username, #[\SensitiveParameter] $password, $options)
+     64▕     {
+     65▕         return version_compare(PHP_VERSION, '8.4.0', '<')
+     66▕             ? new PDO($dsn, $username, $password, $options)
+  ➜  67▕             : PDO::connect($dsn, $username, $password, $options); /** @phpstan-ignore staticMethod.notFound (PHP 8.4) */
+     68▕     }
+     69▕ 
+     70▕     /**
+     71▕      * Handle an exception that occurred during connect execution.
+
+  1   vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:67
+  2   vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:44
+
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  
+   FAILED  Tests\Feature\ChurnPredictionTest > it preserves the valid prediction when a repeat fails     PDOException   
+  SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+
+  at vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:67
+     63▕     protected function createPdoConnection($dsn, $username, #[\SensitiveParameter] $password, $options)
+     64▕     {
+     65▕         return version_compare(PHP_VERSION, '8.4.0', '<')
+     66▕             ? new PDO($dsn, $username, $password, $options)
+  ➜  67▕             : PDO::connect($dsn, $username, $password, $options); /** @phpstan-ignore staticMethod.notFound (PHP 8.4) */
+     68▕     }
+     69▕ 
+     70▕     /**
+     71▕      * Handle an exception that occurred during connect execution.
+
+  1   vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:67
+  2   vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:44
+
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  
+   FAILED  Tests\Feature\ChurnPredictionTest > it rejects conflicting input or results for the same id…  PDOException   
+  SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+
+  at vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:67
+     63▕     protected function createPdoConnection($dsn, $username, #[\SensitiveParameter] $password, $options)
+     64▕     {
+     65▕         return version_compare(PHP_VERSION, '8.4.0', '<')
+     66▕             ? new PDO($dsn, $username, $password, $options)
+  ➜  67▕             : PDO::connect($dsn, $username, $password, $options); /** @phpstan-ignore staticMethod.notFound (PHP 8.4) */
+     68▕     }
+     69▕ 
+     70▕     /**
+     71▕      * Handle an exception that occurred during connect execution.
+
+  1   vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:67
+  2   vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:44
+
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  
+   FAILED  Tests\Feature\ChurnPredictionTest > it rejects conflicting input or results for the same id…  PDOException   
+  SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+
+  at vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:67
+     63▕     protected function createPdoConnection($dsn, $username, #[\SensitiveParameter] $password, $options)
+     64▕     {
+     65▕         return version_compare(PHP_VERSION, '8.4.0', '<')
+     66▕             ? new PDO($dsn, $username, $password, $options)
+  ➜  67▕             : PDO::connect($dsn, $username, $password, $options); /** @phpstan-ignore staticMethod.notFound (PHP 8.4) */
+     68▕     }
+     69▕ 
+     70▕     /**
+     71▕      * Handle an exception that occurred during connect execution.
+
+  1   vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:67
+  2   vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:44
+
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  
+   FAILED  Tests\Feature\ChurnPredictionTest > it retains separate versions and cuts ordered by observ…  PDOException   
+  SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+
+  at vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:67
+     63▕     protected function createPdoConnection($dsn, $username, #[\SensitiveParameter] $password, $options)
+     64▕     {
+     65▕         return version_compare(PHP_VERSION, '8.4.0', '<')
+     66▕             ? new PDO($dsn, $username, $password, $options)
+  ➜  67▕             : PDO::connect($dsn, $username, $password, $options); /** @phpstan-ignore staticMethod.notFound (PHP 8.4) */
+     68▕     }
+     69▕ 
+     70▕     /**
+     71▕      * Handle an exception that occurred during connect execution.
+
+  1   vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:67
+  2   vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:44
+
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  
+   FAILED  Tests\Feature\ChurnPredictionTest > it does not store secrets from unexpected errors          PDOException   
+  SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+
+  at vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:67
+     63▕     protected function createPdoConnection($dsn, $username, #[\SensitiveParameter] $password, $options)
+     64▕     {
+     65▕         return version_compare(PHP_VERSION, '8.4.0', '<')
+     66▕             ? new PDO($dsn, $username, $password, $options)
+  ➜  67▕             : PDO::connect($dsn, $username, $password, $options); /** @phpstan-ignore staticMethod.notFound (PHP 8.4) */
+     68▕     }
+     69▕ 
+     70▕     /**
+     71▕      * Handle an exception that occurred during connect execution.
+
+  1   vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:67
+  2   vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:44
+
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  
+   FAILED  Tests\Feature\ChurnPredictionTest > it rejects responses for another customer or automatic…   PDOException   
+  SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+
+  at vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:67
+     63▕     protected function createPdoConnection($dsn, $username, #[\SensitiveParameter] $password, $options)
+     64▕     {
+     65▕         return version_compare(PHP_VERSION, '8.4.0', '<')
+     66▕             ? new PDO($dsn, $username, $password, $options)
+  ➜  67▕             : PDO::connect($dsn, $username, $password, $options); /** @phpstan-ignore staticMethod.notFound (PHP 8.4) */
+     68▕     }
+     69▕ 
+     70▕     /**
+     71▕      * Handle an exception that occurred during connect execution.
+
+  1   vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:67
+  2   vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:44
+
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  
+   FAILED  Tests\Feature\ChurnPredictionTest > it rejects responses for another customer or automatic…   PDOException   
+  SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+
+  at vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:67
+     63▕     protected function createPdoConnection($dsn, $username, #[\SensitiveParameter] $password, $options)
+     64▕     {
+     65▕         return version_compare(PHP_VERSION, '8.4.0', '<')
+     66▕             ? new PDO($dsn, $username, $password, $options)
+  ➜  67▕             : PDO::connect($dsn, $username, $password, $options); /** @phpstan-ignore staticMethod.notFound (PHP 8.4) */
+     68▕     }
+     69▕ 
+     70▕     /**
+     71▕      * Handle an exception that occurred during connect execution.
+
+  1   vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:67
+  2   vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:44
+
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  
+   FAILED  Tests\Feature\ChurnListingTest > it counts the same filtered population and selects one row…  PDOException   
+  SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+
+  at vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:67
+     63▕     protected function createPdoConnection($dsn, $username, #[\SensitiveParameter] $password, $options)
+     64▕     {
+     65▕         return version_compare(PHP_VERSION, '8.4.0', '<')
+     66▕             ? new PDO($dsn, $username, $password, $options)
+  ➜  67▕             : PDO::connect($dsn, $username, $password, $options); /** @phpstan-ignore staticMethod.notFound (PHP 8.4) */
+     68▕     }
+     69▕ 
+     70▕     /**
+     71▕      * Handle an exception that occurred during connect execution.
+
+  1   vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:67
+  2   vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:44
+
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  
+   FAILED  Tests\Feature\ChurnListingTest > it sorts numeric probabilities and keeps absent prediction…  PDOException   
+  SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+
+  at vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:67
+     63▕     protected function createPdoConnection($dsn, $username, #[\SensitiveParameter] $password, $options)
+     64▕     {
+     65▕         return version_compare(PHP_VERSION, '8.4.0', '<')
+     66▕             ? new PDO($dsn, $username, $password, $options)
+  ➜  67▕             : PDO::connect($dsn, $username, $password, $options); /** @phpstan-ignore staticMethod.notFound (PHP 8.4) */
+     68▕     }
+     69▕ 
+     70▕     /**
+     71▕      * Handle an exception that occurred during connect execution.
+
+  1   vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:67
+  2   vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:44
+
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  
+   FAILED  Tests\Feature\ChurnListingTest > it applies risk and status to both cards and rows with ('r…  PDOException   
+  SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+
+  at vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:67
+     63▕     protected function createPdoConnection($dsn, $username, #[\SensitiveParameter] $password, $options)
+     64▕     {
+     65▕         return version_compare(PHP_VERSION, '8.4.0', '<')
+     66▕             ? new PDO($dsn, $username, $password, $options)
+  ➜  67▕             : PDO::connect($dsn, $username, $password, $options); /** @phpstan-ignore staticMethod.notFound (PHP 8.4) */
+     68▕     }
+     69▕ 
+     70▕     /**
+     71▕      * Handle an exception that occurred during connect execution.
+
+  1   vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:67
+  2   vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:44
+
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  
+   FAILED  Tests\Feature\ChurnListingTest > it applies risk and status to both cards and rows with ('r…  PDOException   
+  SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+
+  at vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:67
+     63▕     protected function createPdoConnection($dsn, $username, #[\SensitiveParameter] $password, $options)
+     64▕     {
+     65▕         return version_compare(PHP_VERSION, '8.4.0', '<')
+     66▕             ? new PDO($dsn, $username, $password, $options)
+  ➜  67▕             : PDO::connect($dsn, $username, $password, $options); /** @phpstan-ignore staticMethod.notFound (PHP 8.4) */
+     68▕     }
+     69▕ 
+     70▕     /**
+     71▕      * Handle an exception that occurred during connect execution.
+
+  1   vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:67
+  2   vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:44
+
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  
+   FAILED  Tests\Feature\ChurnListingTest > it applies risk and status to both cards and rows with ('s…  PDOException   
+  SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+
+  at vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:67
+     63▕     protected function createPdoConnection($dsn, $username, #[\SensitiveParameter] $password, $options)
+     64▕     {
+     65▕         return version_compare(PHP_VERSION, '8.4.0', '<')
+     66▕             ? new PDO($dsn, $username, $password, $options)
+  ➜  67▕             : PDO::connect($dsn, $username, $password, $options); /** @phpstan-ignore staticMethod.notFound (PHP 8.4) */
+     68▕     }
+     69▕ 
+     70▕     /**
+     71▕      * Handle an exception that occurred during connect execution.
+
+  1   vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:67
+  2   vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:44
+
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  
+   FAILED  Tests\Feature\ChurnListingTest > it applies risk and status to both cards and rows with ('s…  PDOException   
+  SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+
+  at vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:67
+     63▕     protected function createPdoConnection($dsn, $username, #[\SensitiveParameter] $password, $options)
+     64▕     {
+     65▕         return version_compare(PHP_VERSION, '8.4.0', '<')
+     66▕             ? new PDO($dsn, $username, $password, $options)
+  ➜  67▕             : PDO::connect($dsn, $username, $password, $options); /** @phpstan-ignore staticMethod.notFound (PHP 8.4) */
+     68▕     }
+     69▕ 
+     70▕     /**
+     71▕      * Handle an exception that occurred during connect execution.
+
+  1   vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:67
+  2   vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:44
+
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  
+   FAILED  Tests\Feature\ChurnListingTest > it applies risk and status to both cards and rows with ('s…  PDOException   
+  SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+
+  at vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:67
+     63▕     protected function createPdoConnection($dsn, $username, #[\SensitiveParameter] $password, $options)
+     64▕     {
+     65▕         return version_compare(PHP_VERSION, '8.4.0', '<')
+     66▕             ? new PDO($dsn, $username, $password, $options)
+  ➜  67▕             : PDO::connect($dsn, $username, $password, $options); /** @phpstan-ignore staticMethod.notFound (PHP 8.4) */
+     68▕     }
+     69▕ 
+     70▕     /**
+     71▕      * Handle an exception that occurred during connect execution.
+
+  1   vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:67
+  2   vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:44
+
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  
+   FAILED  Tests\Feature\ChurnListingTest > it applies risk and status to both cards and rows with ('s…  PDOException   
+  SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+
+  at vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:67
+     63▕     protected function createPdoConnection($dsn, $username, #[\SensitiveParameter] $password, $options)
+     64▕     {
+     65▕         return version_compare(PHP_VERSION, '8.4.0', '<')
+     66▕             ? new PDO($dsn, $username, $password, $options)
+  ➜  67▕             : PDO::connect($dsn, $username, $password, $options); /** @phpstan-ignore staticMethod.notFound (PHP 8.4) */
+     68▕     }
+     69▕ 
+     70▕     /**
+     71▕      * Handle an exception that occurred during connect execution.
+
+  1   vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:67
+  2   vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:44
+
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  
+   FAILED  Tests\Feature\ChurnListingTest > it preserves the stored result when the latest run failed    PDOException   
+  SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+
+  at vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:67
+     63▕     protected function createPdoConnection($dsn, $username, #[\SensitiveParameter] $password, $options)
+     64▕     {
+     65▕         return version_compare(PHP_VERSION, '8.4.0', '<')
+     66▕             ? new PDO($dsn, $username, $password, $options)
+  ➜  67▕             : PDO::connect($dsn, $username, $password, $options); /** @phpstan-ignore staticMethod.notFound (PHP 8.4) */
+     68▕     }
+     69▕ 
+     70▕     /**
+     71▕      * Handle an exception that occurred during connect execution.
+
+  1   vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:67
+  2   vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:44
+
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  
+   FAILED  Tests\Feature\ChurnListingTest > it searches external IDs and treats wildcard characters li…  PDOException   
+  SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+
+  at vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:67
+     63▕     protected function createPdoConnection($dsn, $username, #[\SensitiveParameter] $password, $options)
+     64▕     {
+     65▕         return version_compare(PHP_VERSION, '8.4.0', '<')
+     66▕             ? new PDO($dsn, $username, $password, $options)
+  ➜  67▕             : PDO::connect($dsn, $username, $password, $options); /** @phpstan-ignore staticMethod.notFound (PHP 8.4) */
+     68▕     }
+     69▕ 
+     70▕     /**
+     71▕      * Handle an exception that occurred during connect execution.
+
+  1   vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:67
+  2   vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:44
+
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  
+   FAILED  Tests\Feature\ChurnListingTest > it does not leak counts or matches outside the permitted o…  PDOException   
+  SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+
+  at vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:67
+     63▕     protected function createPdoConnection($dsn, $username, #[\SensitiveParameter] $password, $options)
+     64▕     {
+     65▕         return version_compare(PHP_VERSION, '8.4.0', '<')
+     66▕             ? new PDO($dsn, $username, $password, $options)
+  ➜  67▕             : PDO::connect($dsn, $username, $password, $options); /** @phpstan-ignore staticMethod.notFound (PHP 8.4) */
+     68▕     }
+     69▕ 
+     70▕     /**
+     71▕      * Handle an exception that occurred during connect execution.
+
+  1   vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:67
+  2   vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:44
+
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  
+   FAILED  Tests\Feature\ChurnListingTest > it selects the exact date and model version without repeat…  PDOException   
+  SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+
+  at vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:67
+     63▕     protected function createPdoConnection($dsn, $username, #[\SensitiveParameter] $password, $options)
+     64▕     {
+     65▕         return version_compare(PHP_VERSION, '8.4.0', '<')
+     66▕             ? new PDO($dsn, $username, $password, $options)
+  ➜  67▕             : PDO::connect($dsn, $username, $password, $options); /** @phpstan-ignore staticMethod.notFound (PHP 8.4) */
+     68▕     }
+     69▕ 
+     70▕     /**
+     71▕      * Handle an exception that occurred during connect execution.
+
+  1   vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:67
+  2   vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:44
+
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  
+   FAILED  Tests\Feature\ChurnListingTest > it renders the listing and paginates without overlapping c…  PDOException   
+  SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+
+  at vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:67
+     63▕     protected function createPdoConnection($dsn, $username, #[\SensitiveParameter] $password, $options)
+     64▕     {
+     65▕         return version_compare(PHP_VERSION, '8.4.0', '<')
+     66▕             ? new PDO($dsn, $username, $password, $options)
+  ➜  67▕             : PDO::connect($dsn, $username, $password, $options); /** @phpstan-ignore staticMethod.notFound (PHP 8.4) */
+     68▕     }
+     69▕ 
+     70▕     /**
+     71▕      * Handle an exception that occurred during connect execution.
+
+  1   vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:67
+  2   vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:44
+
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  
+   FAILED  Tests\Feature\ChurnListingTest > it rejects invalid filters before querying with (['DROP TA…  PDOException   
+  SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+
+  at vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:67
+     63▕     protected function createPdoConnection($dsn, $username, #[\SensitiveParameter] $password, $options)
+     64▕     {
+     65▕         return version_compare(PHP_VERSION, '8.4.0', '<')
+     66▕             ? new PDO($dsn, $username, $password, $options)
+  ➜  67▕             : PDO::connect($dsn, $username, $password, $options); /** @phpstan-ignore staticMethod.notFound (PHP 8.4) */
+     68▕     }
+     69▕ 
+     70▕     /**
+     71▕      * Handle an exception that occurred during connect execution.
+
+  1   vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:67
+  2   vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:44
+
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  
+   FAILED  Tests\Feature\ChurnListingTest > it rejects invalid filters before querying with (['Unknown…  PDOException   
+  SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+
+  at vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:67
+     63▕     protected function createPdoConnection($dsn, $username, #[\SensitiveParameter] $password, $options)
+     64▕     {
+     65▕         return version_compare(PHP_VERSION, '8.4.0', '<')
+     66▕             ? new PDO($dsn, $username, $password, $options)
+  ➜  67▕             : PDO::connect($dsn, $username, $password, $options); /** @phpstan-ignore staticMethod.notFound (PHP 8.4) */
+     68▕     }
+     69▕ 
+     70▕     /**
+     71▕      * Handle an exception that occurred during connect execution.
+
+  1   vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:67
+  2   vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:44
+
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  
+   FAILED  Tests\Feature\ChurnListingTest > it rejects invalid filters before querying with ([-1])       PDOException   
+  SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+
+  at vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:67
+     63▕     protected function createPdoConnection($dsn, $username, #[\SensitiveParameter] $password, $options)
+     64▕     {
+     65▕         return version_compare(PHP_VERSION, '8.4.0', '<')
+     66▕             ? new PDO($dsn, $username, $password, $options)
+  ➜  67▕             : PDO::connect($dsn, $username, $password, $options); /** @phpstan-ignore staticMethod.notFound (PHP 8.4) */
+     68▕     }
+     69▕ 
+     70▕     /**
+     71▕      * Handle an exception that occurred during connect execution.
+
+  1   vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:67
+  2   vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:44
+
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  
+   FAILED  Tests\Feature\ChurnListingTest > it rejects invalid filters before querying with (['2026-10…  PDOException   
+  SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+
+  at vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:67
+     63▕     protected function createPdoConnection($dsn, $username, #[\SensitiveParameter] $password, $options)
+     64▕     {
+     65▕         return version_compare(PHP_VERSION, '8.4.0', '<')
+     66▕             ? new PDO($dsn, $username, $password, $options)
+  ➜  67▕             : PDO::connect($dsn, $username, $password, $options); /** @phpstan-ignore staticMethod.notFound (PHP 8.4) */
+     68▕     }
+     69▕ 
+     70▕     /**
+     71▕      * Handle an exception that occurred during connect execution.
+
+  1   vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:67
+  2   vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:44
+
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  
+   FAILED  Tests\Feature\ChurnListingTest > it rejects invalid filters before querying with ([['nested…  PDOException   
+  SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+
+  at vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:67
+     63▕     protected function createPdoConnection($dsn, $username, #[\SensitiveParameter] $password, $options)
+     64▕     {
+     65▕         return version_compare(PHP_VERSION, '8.4.0', '<')
+     66▕             ? new PDO($dsn, $username, $password, $options)
+  ➜  67▕             : PDO::connect($dsn, $username, $password, $options); /** @phpstan-ignore staticMethod.notFound (PHP 8.4) */
+     68▕     }
+     69▕ 
+     70▕     /**
+     71▕      * Handle an exception that occurred during connect execution.
+
+  1   vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:67
+  2   vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:44
+
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  
+   FAILED  Tests\Feature\ChurnDetailTest > it shows the saved prediction with matching input and histo…  PDOException   
+  SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+
+  at vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:67
+     63▕     protected function createPdoConnection($dsn, $username, #[\SensitiveParameter] $password, $options)
+     64▕     {
+     65▕         return version_compare(PHP_VERSION, '8.4.0', '<')
+     66▕             ? new PDO($dsn, $username, $password, $options)
+  ➜  67▕             : PDO::connect($dsn, $username, $password, $options); /** @phpstan-ignore staticMethod.notFound (PHP 8.4) */
+     68▕     }
+     69▕ 
+     70▕     /**
+     71▕      * Handle an exception that occurred during connect execution.
+
+  1   vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:67
+  2   vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:44
+
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  
+   FAILED  Tests\Feature\ChurnDetailTest > it does not disclose a customer outside the permitted scope…  PDOException   
+  SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+
+  at vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:67
+     63▕     protected function createPdoConnection($dsn, $username, #[\SensitiveParameter] $password, $options)
+     64▕     {
+     65▕         return version_compare(PHP_VERSION, '8.4.0', '<')
+     66▕             ? new PDO($dsn, $username, $password, $options)
+  ➜  67▕             : PDO::connect($dsn, $username, $password, $options); /** @phpstan-ignore staticMethod.notFound (PHP 8.4) */
+     68▕     }
+     69▕ 
+     70▕     /**
+     71▕      * Handle an exception that occurred during connect execution.
+
+  1   vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:67
+  2   vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:44
+
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  
+   FAILED  Tests\Feature\ChurnDetailTest > it does not disclose a customer outside the permitted scope…  PDOException   
+  SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+
+  at vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:67
+     63▕     protected function createPdoConnection($dsn, $username, #[\SensitiveParameter] $password, $options)
+     64▕     {
+     65▕         return version_compare(PHP_VERSION, '8.4.0', '<')
+     66▕             ? new PDO($dsn, $username, $password, $options)
+  ➜  67▕             : PDO::connect($dsn, $username, $password, $options); /** @phpstan-ignore staticMethod.notFound (PHP 8.4) */
+     68▕     }
+     69▕ 
+     70▕     /**
+     71▕      * Handle an exception that occurred during connect execution.
+
+  1   vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:67
+  2   vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:44
+
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  
+   FAILED  Tests\Feature\ChurnDetailTest > it does not substitute a different cut or model and detects…  PDOException   
+  SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+
+  at vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:67
+     63▕     protected function createPdoConnection($dsn, $username, #[\SensitiveParameter] $password, $options)
+     64▕     {
+     65▕         return version_compare(PHP_VERSION, '8.4.0', '<')
+     66▕             ? new PDO($dsn, $username, $password, $options)
+  ➜  67▕             : PDO::connect($dsn, $username, $password, $options); /** @phpstan-ignore staticMethod.notFound (PHP 8.4) */
+     68▕     }
+     69▕ 
+     70▕     /**
+     71▕      * Handle an exception that occurred during connect execution.
+
+  1   vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:67
+  2   vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:44
+
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  
+   FAILED  Tests\Feature\ChurnDetailTest > it excludes future and boundary sales and uses unique order…  PDOException   
+  SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+
+  at vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:67
+     63▕     protected function createPdoConnection($dsn, $username, #[\SensitiveParameter] $password, $options)
+     64▕     {
+     65▕         return version_compare(PHP_VERSION, '8.4.0', '<')
+     66▕             ? new PDO($dsn, $username, $password, $options)
+  ➜  67▕             : PDO::connect($dsn, $username, $password, $options); /** @phpstan-ignore staticMethod.notFound (PHP 8.4) */
+     68▕     }
+     69▕ 
+     70▕     /**
+     71▕      * Handle an exception that occurred during connect execution.
+
+  1   vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:67
+  2   vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:44
+
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  
+   FAILED  Tests\Feature\ChurnDetailTest > it handles empty histories and eligibility boundary           PDOException   
+  SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+
+  at vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:67
+     63▕     protected function createPdoConnection($dsn, $username, #[\SensitiveParameter] $password, $options)
+     64▕     {
+     65▕         return version_compare(PHP_VERSION, '8.4.0', '<')
+     66▕             ? new PDO($dsn, $username, $password, $options)
+  ➜  67▕             : PDO::connect($dsn, $username, $password, $options); /** @phpstan-ignore staticMethod.notFound (PHP 8.4) */
+     68▕     }
+     69▕ 
+     70▕     /**
+     71▕      * Handle an exception that occurred during connect execution.
+
+  1   vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:67
+  2   vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:44
+
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  
+   FAILED  Tests\Feature\ChurnDetailTest > it validates detail query parameters with ([['bad']])         PDOException   
+  SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+
+  at vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:67
+     63▕     protected function createPdoConnection($dsn, $username, #[\SensitiveParameter] $password, $options)
+     64▕     {
+     65▕         return version_compare(PHP_VERSION, '8.4.0', '<')
+     66▕             ? new PDO($dsn, $username, $password, $options)
+  ➜  67▕             : PDO::connect($dsn, $username, $password, $options); /** @phpstan-ignore staticMethod.notFound (PHP 8.4) */
+     68▕     }
+     69▕ 
+     70▕     /**
+     71▕      * Handle an exception that occurred during connect execution.
+
+  1   vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:67
+  2   vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:44
+
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  
+   FAILED  Tests\Feature\ChurnDetailTest > it validates detail query parameters with (['2026-10-29'])    PDOException   
+  SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+
+  at vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:67
+     63▕     protected function createPdoConnection($dsn, $username, #[\SensitiveParameter] $password, $options)
+     64▕     {
+     65▕         return version_compare(PHP_VERSION, '8.4.0', '<')
+     66▕             ? new PDO($dsn, $username, $password, $options)
+  ➜  67▕             : PDO::connect($dsn, $username, $password, $options); /** @phpstan-ignore staticMethod.notFound (PHP 8.4) */
+     68▕     }
+     69▕ 
+     70▕     /**
+     71▕      * Handle an exception that occurred during connect execution.
+
+  1   vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:67
+  2   vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:44
+
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  
+   FAILED  Tests\Feature\ChurnDetailTest > it validates detail query parameters with ([0])               PDOException   
+  SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+
+  at vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:67
+     63▕     protected function createPdoConnection($dsn, $username, #[\SensitiveParameter] $password, $options)
+     64▕     {
+     65▕         return version_compare(PHP_VERSION, '8.4.0', '<')
+     66▕             ? new PDO($dsn, $username, $password, $options)
+  ➜  67▕             : PDO::connect($dsn, $username, $password, $options); /** @phpstan-ignore staticMethod.notFound (PHP 8.4) */
+     68▕     }
+     69▕ 
+     70▕     /**
+     71▕      * Handle an exception that occurred during connect execution.
+
+  1   vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:67
+  2   vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:44
+
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  
+   FAILED  Tests\Feature\ChurnDetailTest > it paginates historical versions with links to the exact se…  PDOException   
+  SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+
+  at vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:67
+     63▕     protected function createPdoConnection($dsn, $username, #[\SensitiveParameter] $password, $options)
+     64▕     {
+     65▕         return version_compare(PHP_VERSION, '8.4.0', '<')
+     66▕             ? new PDO($dsn, $username, $password, $options)
+  ➜  67▕             : PDO::connect($dsn, $username, $password, $options); /** @phpstan-ignore staticMethod.notFound (PHP 8.4) */
+     68▕     }
+     69▕ 
+     70▕     /**
+     71▕      * Handle an exception that occurred during connect execution.
+
+  1   vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:67
+  2   vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:44
+
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  
+   FAILED  Tests\Feature\ChurnDetailTest > it protects detail URLs for individual users and guests       PDOException   
+  SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+
+  at vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:67
+     63▕     protected function createPdoConnection($dsn, $username, #[\SensitiveParameter] $password, $options)
+     64▕     {
+     65▕         return version_compare(PHP_VERSION, '8.4.0', '<')
+     66▕             ? new PDO($dsn, $username, $password, $options)
+  ➜  67▕             : PDO::connect($dsn, $username, $password, $options); /** @phpstan-ignore staticMethod.notFound (PHP 8.4) */
+     68▕     }
+     69▕ 
+     70▕     /**
+     71▕      * Handle an exception that occurred during connect execution.
+
+  1   vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:67
+  2   vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:44
+
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  
+   FAILED  Tests\Feature\ChurnWorkTest > it queues once and scopes progress without leaking other owne…  PDOException   
+  SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+
+  at vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:67
+     63▕     protected function createPdoConnection($dsn, $username, #[\SensitiveParameter] $password, $options)
+     64▕     {
+     65▕         return version_compare(PHP_VERSION, '8.4.0', '<')
+     66▕             ? new PDO($dsn, $username, $password, $options)
+  ➜  67▕             : PDO::connect($dsn, $username, $password, $options); /** @phpstan-ignore staticMethod.notFound (PHP 8.4) */
+     68▕     }
+     69▕ 
+     70▕     /**
+     71▕      * Handle an exception that occurred during connect execution.
+
+  1   vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:67
+  2   vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:44
+
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  
+   FAILED  Tests\Feature\ChurnWorkTest > it cannot queue a customer outside its scope or an invalid da…  PDOException   
+  SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+
+  at vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:67
+     63▕     protected function createPdoConnection($dsn, $username, #[\SensitiveParameter] $password, $options)
+     64▕     {
+     65▕         return version_compare(PHP_VERSION, '8.4.0', '<')
+     66▕             ? new PDO($dsn, $username, $password, $options)
+  ➜  67▕             : PDO::connect($dsn, $username, $password, $options); /** @phpstan-ignore staticMethod.notFound (PHP 8.4) */
+     68▕     }
+     69▕ 
+     70▕     /**
+     71▕      * Handle an exception that occurred during connect execution.
+
+  1   vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:67
+  2   vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:44
+
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  
+   FAILED  Tests\Feature\ChurnWorkTest > it queues only owners in the requested batch                    PDOException   
+  SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+
+  at vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:67
+     63▕     protected function createPdoConnection($dsn, $username, #[\SensitiveParameter] $password, $options)
+     64▕     {
+     65▕         return version_compare(PHP_VERSION, '8.4.0', '<')
+     66▕             ? new PDO($dsn, $username, $password, $options)
+  ➜  67▕             : PDO::connect($dsn, $username, $password, $options); /** @phpstan-ignore staticMethod.notFound (PHP 8.4) */
+     68▕     }
+     69▕ 
+     70▕     /**
+     71▕      * Handle an exception that occurred during connect execution.
+
+  1   vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:67
+  2   vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:44
+
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  
+   FAILED  Tests\Feature\ChurnWorkTest > it processes a real stored response and reuses it without cha…  PDOException   
+  SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+
+  at vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:67
+     63▕     protected function createPdoConnection($dsn, $username, #[\SensitiveParameter] $password, $options)
+     64▕     {
+     65▕         return version_compare(PHP_VERSION, '8.4.0', '<')
+     66▕             ? new PDO($dsn, $username, $password, $options)
+  ➜  67▕             : PDO::connect($dsn, $username, $password, $options); /** @phpstan-ignore staticMethod.notFound (PHP 8.4) */
+     68▕     }
+     69▕ 
+     70▕     /**
+     71▕      * Handle an exception that occurred during connect execution.
+
+  1   vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:67
+  2   vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:44
+
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  
+   FAILED  Tests\Feature\ChurnWorkTest > it preserves saved predictions on failure and permits a new e…  PDOException   
+  SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+
+  at vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:67
+     63▕     protected function createPdoConnection($dsn, $username, #[\SensitiveParameter] $password, $options)
+     64▕     {
+     65▕         return version_compare(PHP_VERSION, '8.4.0', '<')
+     66▕             ? new PDO($dsn, $username, $password, $options)
+  ➜  67▕             : PDO::connect($dsn, $username, $password, $options); /** @phpstan-ignore staticMethod.notFound (PHP 8.4) */
+     68▕     }
+     69▕ 
+     70▕     /**
+     71▕      * Handle an exception that occurred during connect execution.
+
+  1   vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:67
+  2   vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:44
+
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  
+   FAILED  Tests\Feature\ChurnWorkTest > it skips ineligible customers without calling the API           PDOException   
+  SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+
+  at vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:67
+     63▕     protected function createPdoConnection($dsn, $username, #[\SensitiveParameter] $password, $options)
+     64▕     {
+     65▕         return version_compare(PHP_VERSION, '8.4.0', '<')
+     66▕             ? new PDO($dsn, $username, $password, $options)
+  ➜  67▕             : PDO::connect($dsn, $username, $password, $options); /** @phpstan-ignore staticMethod.notFound (PHP 8.4) */
+     68▕     }
+     69▕ 
+     70▕     /**
+     71▕      * Handle an exception that occurred during connect execution.
+
+  1   vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:67
+  2   vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:44
+
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  
+   FAILED  Tests\Feature\ChurnWorkTest > it closes interrupted queue items without automatically retry…  PDOException   
+  SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+
+  at vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:67
+     63▕     protected function createPdoConnection($dsn, $username, #[\SensitiveParameter] $password, $options)
+     64▕     {
+     65▕         return version_compare(PHP_VERSION, '8.4.0', '<')
+     66▕             ? new PDO($dsn, $username, $password, $options)
+  ➜  67▕             : PDO::connect($dsn, $username, $password, $options); /** @phpstan-ignore staticMethod.notFound (PHP 8.4) */
+     68▕     }
+     69▕ 
+     70▕     /**
+     71▕      * Handle an exception that occurred during connect execution.
+
+  1   vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:67
+  2   vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:44
+
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  
+   FAILED  Tests\Feature\ChurnWorkTest > it rejects a changed model configuration instead of writing a…  PDOException   
+  SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+
+  at vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:67
+     63▕     protected function createPdoConnection($dsn, $username, #[\SensitiveParameter] $password, $options)
+     64▕     {
+     65▕         return version_compare(PHP_VERSION, '8.4.0', '<')
+     66▕             ? new PDO($dsn, $username, $password, $options)
+  ➜  67▕             : PDO::connect($dsn, $username, $password, $options); /** @phpstan-ignore staticMethod.notFound (PHP 8.4) */
+     68▕     }
+     69▕ 
+     70▕     /**
+     71▕      * Handle an exception that occurred during connect execution.
+
+  1   vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:67
+  2   vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:44
+
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  
+   FAILED  Tests\Feature\ChurnWorkTest > it enforces read and update permissions on POST with (['churn…  PDOException   
+  SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+
+  at vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:67
+     63▕     protected function createPdoConnection($dsn, $username, #[\SensitiveParameter] $password, $options)
+     64▕     {
+     65▕         return version_compare(PHP_VERSION, '8.4.0', '<')
+     66▕             ? new PDO($dsn, $username, $password, $options)
+  ➜  67▕             : PDO::connect($dsn, $username, $password, $options); /** @phpstan-ignore staticMethod.notFound (PHP 8.4) */
+     68▕     }
+     69▕ 
+     70▕     /**
+     71▕      * Handle an exception that occurred during connect execution.
+
+  1   vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:67
+  2   vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:44
+
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  
+   FAILED  Tests\Feature\ChurnWorkTest > it enforces read and update permissions on POST with (['churn…  PDOException   
+  SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+
+  at vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:67
+     63▕     protected function createPdoConnection($dsn, $username, #[\SensitiveParameter] $password, $options)
+     64▕     {
+     65▕         return version_compare(PHP_VERSION, '8.4.0', '<')
+     66▕             ? new PDO($dsn, $username, $password, $options)
+  ➜  67▕             : PDO::connect($dsn, $username, $password, $options); /** @phpstan-ignore staticMethod.notFound (PHP 8.4) */
+     68▕     }
+     69▕ 
+     70▕     /**
+     71▕      * Handle an exception that occurred during connect execution.
+
+  1   vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:67
+  2   vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:44
+
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  
+   FAILED  Tests\Feature\ChurnWorkTest > it enforces read and update permissions on POST with (['churn…  PDOException   
+  SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+
+  at vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:67
+     63▕     protected function createPdoConnection($dsn, $username, #[\SensitiveParameter] $password, $options)
+     64▕     {
+     65▕         return version_compare(PHP_VERSION, '8.4.0', '<')
+     66▕             ? new PDO($dsn, $username, $password, $options)
+  ➜  67▕             : PDO::connect($dsn, $username, $password, $options); /** @phpstan-ignore staticMethod.notFound (PHP 8.4) */
+     68▕     }
+     69▕ 
+     70▕     /**
+     71▕      * Handle an exception that occurred during connect execution.
+
+  1   vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:67
+  2   vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:44
+
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  
+   FAILED  Tests\Feature\ChurnWorkTest > it requires explicit target and valid parameters with (['cust…  PDOException   
+  SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+
+  at vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:67
+     63▕     protected function createPdoConnection($dsn, $username, #[\SensitiveParameter] $password, $options)
+     64▕     {
+     65▕         return version_compare(PHP_VERSION, '8.4.0', '<')
+     66▕             ? new PDO($dsn, $username, $password, $options)
+  ➜  67▕             : PDO::connect($dsn, $username, $password, $options); /** @phpstan-ignore staticMethod.notFound (PHP 8.4) */
+     68▕     }
+     69▕ 
+     70▕     /**
+     71▕      * Handle an exception that occurred during connect execution.
+
+  1   vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:67
+  2   vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:44
+
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  
+   FAILED  Tests\Feature\ChurnWorkTest > it requires explicit target and valid parameters with (['visi…  PDOException   
+  SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+
+  at vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:67
+     63▕     protected function createPdoConnection($dsn, $username, #[\SensitiveParameter] $password, $options)
+     64▕     {
+     65▕         return version_compare(PHP_VERSION, '8.4.0', '<')
+     66▕             ? new PDO($dsn, $username, $password, $options)
+  ➜  67▕             : PDO::connect($dsn, $username, $password, $options); /** @phpstan-ignore staticMethod.notFound (PHP 8.4) */
+     68▕     }
+     69▕ 
+     70▕     /**
+     71▕      * Handle an exception that occurred during connect execution.
+
+  1   vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:67
+  2   vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:44
+
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  
+   FAILED  Tests\Feature\ChurnWorkTest > it requires explicit target and valid parameters with (['visi…  PDOException   
+  SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+
+  at vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:67
+     63▕     protected function createPdoConnection($dsn, $username, #[\SensitiveParameter] $password, $options)
+     64▕     {
+     65▕         return version_compare(PHP_VERSION, '8.4.0', '<')
+     66▕             ? new PDO($dsn, $username, $password, $options)
+  ➜  67▕             : PDO::connect($dsn, $username, $password, $options); /** @phpstan-ignore staticMethod.notFound (PHP 8.4) */
+     68▕     }
+     69▕ 
+     70▕     /**
+     71▕      * Handle an exception that occurred during connect execution.
+
+  1   vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:67
+  2   vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:44
+
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  
+   FAILED  Tests\Feature\ChurnWorkTest > it validates CLI input without doing work                       PDOException   
+  SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+
+  at vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:67
+     63▕     protected function createPdoConnection($dsn, $username, #[\SensitiveParameter] $password, $options)
+     64▕     {
+     65▕         return version_compare(PHP_VERSION, '8.4.0', '<')
+     66▕             ? new PDO($dsn, $username, $password, $options)
+  ➜  67▕             : PDO::connect($dsn, $username, $password, $options); /** @phpstan-ignore staticMethod.notFound (PHP 8.4) */
+     68▕     }
+     69▕ 
+     70▕     /**
+     71▕      * Handle an exception that occurred during connect execution.
+
+  1   vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:67
+  2   vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:44
+
+
+  Tests:    39 deprecated, 60 failed, 51 passed (269 assertions)
+  Duration: 137.89s
+

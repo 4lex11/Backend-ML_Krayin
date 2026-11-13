@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "customers": 431,
+  "features": 7,
+  "max_absolute_error": {
+    "Recency": 0.0,
+    "Frequency": 0.0,
+    "Monetary_Sum": 9.094947017729282e-13,
+    "Monetary_Mean": 9.094947017729282e-13,
+    "Monetary_Std": 9.094947017729282e-13,
+    "Cat_Count": 0.0,
+    "SubCat_Count": 0.0
+  },
+  "absolute_tolerance": 1e-08
+}

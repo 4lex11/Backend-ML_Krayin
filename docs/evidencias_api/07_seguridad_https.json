@@ -1,0 +1,16 @@
+{
+  "checked_at_utc": "2026-10-28T07:10:04.653248+00:00",
+  "checks": {
+    "trusted_certificate_and_hostname": true,
+    "https_authenticated_status": 200,
+    "negotiated_protocol": "TLSv1.3",
+    "tls12_supported": true,
+    "absent_and_invalid_key_status": 401,
+    "untrusted_host_status": 400,
+    "untrusted_certificate_rejected": true,
+    "plaintext_http_not_accepted": true,
+    "disallowed_peer_even_with_valid_key": 403,
+    "rotation_old_rejected_new_accepted": true
+  },
+  "scope": "Prueba local con Uvicorn, TLS real y certificado autofirmado confiado explícitamente por el cliente. Sin Krayin, DNS público ni cambios en firewall o confianza de Windows."
+}

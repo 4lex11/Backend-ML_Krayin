@@ -1,0 +1,79 @@
+{
+  "schema_version": "churn180-v2-experimental",
+  "status": "design_only_mej01",
+  "created_date": "2026-10-29",
+  "purpose": "Mejorar precision_at_20 sin cambiar el artefacto ni la inferencia churn180-v1.",
+  "source": {
+    "dataset_zip": "train.csv.zip",
+    "dataset_zip_sha256": "a9b35af6cf9530e61d42ec22ef6d485799c0ee7d2e4710f1f803a71b8f1c29cb",
+    "dataset_csv_sha256": "dbb0f167b27ccf02d7ff8cb0446a9abc6dbc3522e83cf9daa6939801acfdd196",
+    "expected_rows": 9800,
+    "expected_customers": 793,
+    "expected_orders": 4922,
+    "date_format": "%d/%m/%Y"
+  },
+  "baseline": {
+    "model_version": "churn180-v1",
+    "model_sha256": "ad1eb6205eb40ec9cf53e3a429d7a2c3b16bc045e56dcf7f063eb3355243ffdd",
+    "metadata_sha256": "d08042cefc85e9bef6ee8fcde986a474ee0559c0f6ecfc12ea20063add99c030",
+    "protocol_sha256": "713debf1f764eaea350356238b938143596923e77f547d4be99ceac1c8d77903",
+    "features": ["Recency", "Frequency", "Monetary_Sum", "Monetary_Mean", "Monetary_Std", "Cat_Count", "SubCat_Count"]
+  },
+  "definition": {
+    "lookback_days": 365,
+    "horizon_days": 180,
+    "eligible_recency_max_days": 180,
+    "churn": "No purchase in (cutoff, cutoff + 180 days].",
+    "history": "Transactions in (cutoff - 365 days, cutoff]."
+  },
+  "seed": 42,
+  "evaluations": [
+    {"id": "D1", "train_cutoffs": ["2016-06-30"], "calibration_cutoff": "2016-12-31", "evaluation_cutoff": "2017-06-30"},
+    {"id": "D2", "train_cutoffs": ["2016-06-30", "2016-12-31"], "calibration_cutoff": "2017-06-30", "evaluation_cutoff": "2017-12-31"},
+    {"id": "E1", "train_cutoffs": ["2016-06-30", "2016-12-31", "2017-06-30"], "calibration_cutoff": "2017-12-31", "evaluation_cutoff": "2018-06-30", "role": "exploratory_acceptance_only"}
+  ],
+  "comparators": ["recency_score", "training_prevalence_constant", "churn180-v1_recipe"],
+  "candidate_families": ["logistic_regression_regularized", "random_forest_regularized", "lightgbm_regularized"],
+  "temporal_feature_module": "ML.features_v2",
+  "temporal_features": [
+    "Orders_30d",
+    "Orders_90d",
+    "Orders_180d",
+    "Sales_30d",
+    "Sales_90d",
+    "Sales_180d",
+    "Recent90_To_Prior90_Order_Ratio",
+    "ActiveMonths_365d",
+    "MeanOrderGapDays",
+    "StdOrderGapDays",
+    "HasMultipleOrders"
+  ],
+  "candidate_budget_max": 24,
+  "smote": "not_allowed_in_first_round",
+  "selection": {
+    "primary": "mean_precision_at_20_D1_D2",
+    "tie_breakers": ["mean_average_precision_desc", "mean_brier_asc", "feature_count_asc", "configuration_id_asc"],
+    "evaluation_cutoff_not_for_selection": "E1"
+  },
+  "reporting": {
+    "selection_fractions": [0.1, 0.2, 0.3],
+    "primary_fraction": 0.2,
+    "metrics": ["precision_at_k", "recall_at_k", "lift_at_k", "average_precision", "roc_auc", "brier", "log_loss", "calibration_curve"],
+    "bootstrap": {"repeats": 1000, "seed": 42, "unit": "customer", "minimum_valid_fraction": 0.9}
+  },
+  "promotion_gate": {
+    "mean_precision_at_20_gain_vs_each_comparator": 0.05,
+    "mean_average_precision_gain_vs_each_comparator": 0.02,
+    "maximum_single_cutoff_ap_loss_vs_each_comparator": 0.02,
+    "maximum_mean_brier_excess": 0.01,
+    "minimum_customers_per_cutoff": 100,
+    "must_have_both_classes": true,
+    "e1_must_beat": ["recency_score", "churn180-v1_recipe", "churn180-v1_installed_artifact"],
+    "require_positive_paired_ci95_for_primary_metric": true
+  },
+  "immutability": {
+    "do_not_modify": ["ML/protocol.json", "ML/artifacts/churn180-v1", "backend", "Krayin configuration"],
+    "new_outputs_only": true,
+    "automatic_action_allowed": false
+  }
+}

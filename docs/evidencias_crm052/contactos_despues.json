@@ -1,0 +1,14 @@
+
+In Connection.php line 838:
+                                                                                                                       
+  SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha co  
+  nexión (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: laravel-crm, SQL: select * from `persons` order b  
+  y `id` asc)                                                                                                          
+                                                                                                                       
+
+In Connector.php line 67:
+                                                                                                                       
+  SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha co  
+  nexión                                                                                                               
+                                                                                                                       
+

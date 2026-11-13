@@ -1,0 +1,46 @@
+
+  GET|HEAD   admin/churn ..................... admin.churn.index › Webkul\Churn\Http\Controllers\ChurnController@index
+             ⇂ Illuminate\Cookie\Middleware\EncryptCookies
+             ⇂ Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse
+             ⇂ Illuminate\Session\Middleware\StartSession
+             ⇂ Illuminate\View\Middleware\ShareErrorsFromSession
+             ⇂ Illuminate\Foundation\Http\Middleware\ValidateCsrfToken
+             ⇂ Illuminate\Routing\Middleware\SubstituteBindings
+             ⇂ Barryvdh\Debugbar\Middleware\InjectDebugbar
+             ⇂ Webkul\Admin\Http\Middleware\Locale
+             ⇂ Webkul\Admin\Http\Middleware\Bouncer
+  GET|HEAD   admin/churn/customers/{customer} .. admin.churn.show › Webkul\Churn\Http\Controllers\ChurnController@show
+             ⇂ Illuminate\Cookie\Middleware\EncryptCookies
+             ⇂ Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse
+             ⇂ Illuminate\Session\Middleware\StartSession
+             ⇂ Illuminate\View\Middleware\ShareErrorsFromSession
+             ⇂ Illuminate\Foundation\Http\Middleware\ValidateCsrfToken
+             ⇂ Illuminate\Routing\Middleware\SubstituteBindings
+             ⇂ Barryvdh\Debugbar\Middleware\InjectDebugbar
+             ⇂ Webkul\Admin\Http\Middleware\Locale
+             ⇂ Webkul\Admin\Http\Middleware\Bouncer
+  POST       admin/churn/customers/{customer}/reviews admin.churn.review › Webkul\Churn\Http\Controllers\ChurnController@review
+             ⇂ Illuminate\Cookie\Middleware\EncryptCookies
+             ⇂ Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse
+             ⇂ Illuminate\Session\Middleware\StartSession
+             ⇂ Illuminate\View\Middleware\ShareErrorsFromSession
+             ⇂ Illuminate\Routing\Middleware\ThrottleRequests:20,1
+             ⇂ Illuminate\Routing\Middleware\SubstituteBindings
+             ⇂ Barryvdh\Debugbar\Middleware\InjectDebugbar
+             ⇂ Webkul\Admin\Http\Middleware\Locale
+             ⇂ Webkul\Admin\Http\Middleware\Bouncer
+             ⇂ Webkul\Churn\Http\Middleware\ChurnCsrfToken
+  POST       admin/churn/updates ........... admin.churn.update › Webkul\Churn\Http\Controllers\ChurnController@update
+             ⇂ Illuminate\Cookie\Middleware\EncryptCookies
+             ⇂ Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse
+             ⇂ Illuminate\Session\Middleware\StartSession
+             ⇂ Illuminate\View\Middleware\ShareErrorsFromSession
+             ⇂ Illuminate\Routing\Middleware\ThrottleRequests:10,1
+             ⇂ Illuminate\Routing\Middleware\SubstituteBindings
+             ⇂ Barryvdh\Debugbar\Middleware\InjectDebugbar
+             ⇂ Webkul\Admin\Http\Middleware\Locale
+             ⇂ Webkul\Admin\Http\Middleware\Bouncer
+             ⇂ Webkul\Churn\Http\Middleware\ChurnCsrfToken
+
+                                                                                                    Showing [4] routes
+

@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "desktop": [
+    1440,
+    1000
+  ],
+  "mobile": [
+    390,
+    844
+  ],
+  "all_customers": 793,
+  "saved_filter": 1,
+  "search_probability": "34.01 %",
+  "page2_rows": 20,
+  "mobile_overflow": false,
+  "page_errors": []
+}

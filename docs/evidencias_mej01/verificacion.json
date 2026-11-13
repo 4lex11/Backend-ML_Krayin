@@ -1,0 +1,61 @@
+{
+  "date": "2026-10-29",
+  "protocol_sha256": "c19f6cf6aae548757be631bdd2f24a09e8733e3636ad5c18796b22b08923272a",
+  "checks": {
+    "protocol_schema": true,
+    "design_only": true,
+    "zip_hash": true,
+    "csv_hash": true,
+    "model_hash": true,
+    "metadata_hash": true,
+    "v1_protocol_hash": true,
+    "no_smote_first_round": true,
+    "e1_not_for_selection": true,
+    "automatic_actions_disabled": true,
+    "single_csv_in_zip": true,
+    "row_count": true,
+    "customer_count": true,
+    "order_count": true,
+    "coverage": true,
+    "all_cutoff_chronology_and_coverage": true
+  },
+  "cutoffs": [
+    {
+      "id": "D1",
+      "train_cutoffs": [
+        "2016-06-30"
+      ],
+      "calibration_cutoff": "2016-12-31",
+      "evaluation_cutoff": "2017-06-30",
+      "history_start_exclusive": "2016-06-30",
+      "label_end_inclusive": "2017-12-27",
+      "chronology_and_coverage_valid": true
+    },
+    {
+      "id": "D2",
+      "train_cutoffs": [
+        "2016-06-30",
+        "2016-12-31"
+      ],
+      "calibration_cutoff": "2017-06-30",
+      "evaluation_cutoff": "2017-12-31",
+      "history_start_exclusive": "2016-12-31",
+      "label_end_inclusive": "2018-06-29",
+      "chronology_and_coverage_valid": true
+    },
+    {
+      "id": "E1",
+      "train_cutoffs": [
+        "2016-06-30",
+        "2016-12-31",
+        "2017-06-30"
+      ],
+      "calibration_cutoff": "2017-12-31",
+      "evaluation_cutoff": "2018-06-30",
+      "history_start_exclusive": "2017-06-30",
+      "label_end_inclusive": "2018-12-27",
+      "chronology_and_coverage_valid": true
+    }
+  ],
+  "scope": "Verificación MEJ-01; no entrena, calibra, evalúa ni modifica ningún modelo."
+}

@@ -1,0 +1,11 @@
+{
+    "dry_run": false,
+    "customers": 793,
+    "reused_contacts": 0,
+    "created_contacts": 0,
+    "existing_mappings": 793,
+    "lines_inserted": 0,
+    "lines_unchanged": 9800,
+    "sha256": "dbb0f167b27ccf02d7ff8cb0446a9abc6dbc3522e83cf9daa6939801acfdd196",
+    "default_cutoff": "2018-06-30"
+}

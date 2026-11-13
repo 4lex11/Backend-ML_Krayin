@@ -1,0 +1,172 @@
+{
+  "candidate": {
+    "id": "lightgbm_original_a",
+    "family": "lightgbm",
+    "features": "original",
+    "params": {
+      "n_estimators": 100,
+      "max_depth": 2,
+      "num_leaves": 4,
+      "min_child_samples": 20,
+      "reg_lambda": 1.0,
+      "learning_rate": 0.03,
+      "random_state": 42,
+      "n_jobs": 1,
+      "verbosity": -1
+    }
+  },
+  "ranking": [
+    {
+      "id": "lightgbm_original_a",
+      "feature_count": 7,
+      "precision_at_20": 0.5182270091135046,
+      "average_precision": 0.4583689891965959,
+      "brier": 0.2686703370240803
+    },
+    {
+      "id": "forest_original_a",
+      "feature_count": 7,
+      "precision_at_20": 0.4823943661971831,
+      "average_precision": 0.44909673327870553,
+      "brier": 0.2685608062915618
+    },
+    {
+      "id": "forest_combined_b",
+      "feature_count": 18,
+      "precision_at_20": 0.46982877658105493,
+      "average_precision": 0.4471826011092691,
+      "brier": 0.2684946210681234
+    },
+    {
+      "id": "forest_original_b",
+      "feature_count": 7,
+      "precision_at_20": 0.4536039768019884,
+      "average_precision": 0.4416661300427913,
+      "brier": 0.2687338612005106
+    },
+    {
+      "id": "lightgbm_combined_b",
+      "feature_count": 18,
+      "precision_at_20": 0.4536039768019884,
+      "average_precision": 0.4374567436928607,
+      "brier": 0.2687588467961753
+    },
+    {
+      "id": "forest_combined_a",
+      "feature_count": 18,
+      "precision_at_20": 0.4410383871858603,
+      "average_precision": 0.44241283304370443,
+      "brier": 0.26858609119964183
+    },
+    {
+      "id": "logistic_temporal_b",
+      "feature_count": 11,
+      "precision_at_20": 0.41224799779066557,
+      "average_precision": 0.4048657285997873,
+      "brier": 0.26921287190760307
+    },
+    {
+      "id": "lightgbm_original_b",
+      "feature_count": 7,
+      "precision_at_20": 0.4119718309859155,
+      "average_precision": 0.40792518528397426,
+      "brier": 0.26899825047436654
+    },
+    {
+      "id": "lightgbm_temporal_a",
+      "feature_count": 11,
+      "precision_at_20": 0.39664457332228664,
+      "average_precision": 0.3840533901035493,
+      "brier": 0.2695231504576716
+    },
+    {
+      "id": "logistic_temporal_a",
+      "feature_count": 11,
+      "precision_at_20": 0.39540182270091134,
+      "average_precision": 0.4077408835141923,
+      "brier": 0.26937858849132523
+    },
+    {
+      "id": "logistic_combined_b",
+      "feature_count": 18,
+      "precision_at_20": 0.3945042805854736,
+      "average_precision": 0.40355168250589957,
+      "brier": 0.26777096195289496
+    },
+    {
+      "id": "logistic_original_a",
+      "feature_count": 7,
+      "precision_at_20": 0.3804197735432201,
+      "average_precision": 0.40174087796244307,
+      "brier": 0.268730213822186
+    },
+    {
+      "id": "logistic_original_b",
+      "feature_count": 7,
+      "precision_at_20": 0.37765810549571943,
+      "average_precision": 0.4103957087160732,
+      "brier": 0.26874795602628826
+    },
+    {
+      "id": "forest_temporal_b",
+      "feature_count": 11,
+      "precision_at_20": 0.372134769400718,
+      "average_precision": 0.429502357099346,
+      "brier": 0.2687083815337911
+    },
+    {
+      "id": "lightgbm_temporal_b",
+      "feature_count": 11,
+      "precision_at_20": 0.372134769400718,
+      "average_precision": 0.38565817898314514,
+      "brier": 0.26925955539981755
+    },
+    {
+      "id": "logistic_combined_a",
+      "feature_count": 18,
+      "precision_at_20": 0.3712372272852803,
+      "average_precision": 0.4003704668456982,
+      "brier": 0.2682678148931035
+    },
+    {
+      "id": "lightgbm_combined_a",
+      "feature_count": 18,
+      "precision_at_20": 0.34734879867439933,
+      "average_precision": 0.37923940332931705,
+      "brier": 0.2690964185113514
+    },
+    {
+      "id": "forest_temporal_a",
+      "feature_count": 11,
+      "precision_at_20": 0.33416183374758357,
+      "average_precision": 0.3754935539035308,
+      "brier": 0.2688157758533126
+    }
+  ],
+  "comparators": [
+    {
+      "id": "baseline_constant",
+      "feature_count": 1,
+      "precision_at_20": 0.40582711958022644,
+      "average_precision": 0.4019440254734372,
+      "brier": 0.24408555955218508
+    },
+    {
+      "id": "baseline_recency",
+      "feature_count": 1,
+      "precision_at_20": 0.4367578017122342,
+      "average_precision": 0.41494698426949256,
+      "brier": 0.3061424379871185
+    },
+    {
+      "id": "baseline_v1_recipe",
+      "feature_count": 7,
+      "precision_at_20": 0.4211543772438553,
+      "average_precision": 0.41060602573230653,
+      "brier": 0.2689888184909639
+    }
+  ],
+  "E1_used": false,
+  "promoted": false,
+  "next": "MEJ-05: calibration and thresholds; MEJ-06: exploratory acceptance."
+}

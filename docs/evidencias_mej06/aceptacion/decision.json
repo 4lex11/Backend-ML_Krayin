@@ -1,0 +1,25 @@
+{
+  "accepted": false,
+  "checks": {
+    "precision_gain_recency": true,
+    "wins_two_cuts_recency": true,
+    "ap_gain_recency": true,
+    "ap_stability_recency": true,
+    "positive_ci_recency": true,
+    "precision_gain_recipe": true,
+    "wins_two_cuts_recipe": true,
+    "ap_gain_recipe": true,
+    "ap_stability_recipe": true,
+    "positive_ci_recipe": true,
+    "E1_beats_recency": true,
+    "E1_beats_recipe": true,
+    "E1_beats_installed": true,
+    "brier_constant": false,
+    "brier_recipe": true,
+    "E1_brier_installed": false,
+    "v1_unchanged": true,
+    "common_population_and_finite_predictions": true
+  },
+  "decision": "retain_v1",
+  "E1_is_independent_test": false
+}

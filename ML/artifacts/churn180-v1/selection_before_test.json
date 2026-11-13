@@ -1,0 +1,8 @@
+{
+  "model": "LightGBM",
+  "thresholds": {
+    "medium": 0.31121803153472,
+    "high": 0.37729508760356534
+  },
+  "protocol_sha256": "713debf1f764eaea350356238b938143596923e77f547d4be99ceac1c8d77903"
+}

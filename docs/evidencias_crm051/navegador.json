@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "listing_rule": "limited",
+  "detail_rule": "limited",
+  "explanation_visible": true,
+  "reader_cannot_update": true,
+  "mobile_overflow": false,
+  "page_errors": []
+}

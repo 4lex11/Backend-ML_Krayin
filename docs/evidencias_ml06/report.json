@@ -1,0 +1,62 @@
+{
+  "model_version": "churn180-v1",
+  "model_sha256": "ad1eb6205eb40ec9cf53e3a429d7a2c3b16bc045e56dcf7f063eb3355243ffdd",
+  "snapshot_sha256": {
+    "snapshot_2017-12-31.csv": "facb769a2b53d80395b71fb8292c0703998638e921e4814e6e4bb0a94ca932ca",
+    "snapshot_2018-06-30.csv": "1a286bafc71d9332f93fe02b2478a4509091407f547731f6584e77035ae46385"
+  },
+  "thresholds_unchanged": {
+    "medium": 0.31121803153472,
+    "high": 0.37729508760356534
+  },
+  "calibration": [
+    {
+      "period": "validation",
+      "variant": "raw",
+      "n": 510,
+      "prevalence": 0.4392156862745098,
+      "mean_probability": 0.5297880952447414,
+      "brier": 0.2700588924287807,
+      "log_loss": 0.7360418440141175
+    },
+    {
+      "period": "validation",
+      "variant": "sigmoid",
+      "n": 510,
+      "prevalence": 0.4392156862745098,
+      "mean_probability": 0.36087248397707333,
+      "brier": 0.25241452578965434,
+      "log_loss": 0.6987993873784912
+    },
+    {
+      "period": "test",
+      "variant": "raw",
+      "n": 431,
+      "prevalence": 0.23433874709976799,
+      "mean_probability": 0.5389983043900024,
+      "brier": 0.2805482382369708,
+      "log_loss": 0.7591123862015279
+    },
+    {
+      "period": "test",
+      "variant": "sigmoid",
+      "n": 431,
+      "prevalence": 0.23433874709976799,
+      "mean_probability": 0.35913724922386836,
+      "brier": 0.19670346195875146,
+      "log_loss": 0.5841708846069033
+    }
+  ],
+  "scenarios_count": 90,
+  "status": "academic_sensitivity_analysis_only",
+  "commercially_validated": false,
+  "automatic_action_allowed": false,
+  "limitations": [
+    "El test ya había sido observado: este análisis es retrospectivo, no nueva validación independiente.",
+    "Costos FP=1 y FN=1/2/5 son unidades abstractas; no dinero, margen ni efecto causal.",
+    "Cupos 10/20/30% son supuestos, no capacidad informada por un negocio.",
+    "Se selecciona fracción en validación y se aplica sin optimizar en test; desempate por ID.",
+    "Top-k es una política de análisis, no reemplaza las categorías de la API.",
+    "Datos insuficientes para validar comercialmente umbrales o afirmar rentabilidad."
+  ]
+}

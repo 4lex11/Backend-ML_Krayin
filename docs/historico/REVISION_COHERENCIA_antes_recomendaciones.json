@@ -1,0 +1,38 @@
+{
+  "date": "2026-10-29",
+  "checks": {
+    "test_metric_roc_auc": true,
+    "test_metric_average_precision": true,
+    "test_metric_brier": true,
+    "population": true,
+    "model_unchanged": true,
+    "original_retained": true,
+    "final_test_count": true,
+    "coverage": true,
+    "no_old_placeholders": true,
+    "academic_scope": true,
+    "historical_ML_LightGBM": true,
+    "historical_ML_Principal": true,
+    "historical_ML_RandomForest": true,
+    "historical_ML_XGBoost": true,
+    "historical_PruebaFallida": true,
+    "notebook_images_exist": true,
+    "conclusions_and_capture_guide": true,
+    "crm_documents": true,
+    "crm_results_in_thesis": true,
+    "pre_crm062_backup": true,
+    "final_document_links": true
+  },
+  "missing_references": [],
+  "docx_sha256": "4ed04a2a4b12a0949506a058716e8c2422df15500e6f1c62fd7f24a5728ee93a",
+  "original_sha256": "40925664a30584e83dfb064c3910901b5d6e6f6d5fecb07d995f977d1c165882",
+  "visual_review": {
+    "pages": 16,
+    "renderer": "Microsoft Word PDF export followed by bundled Poppler rasterization",
+    "all_pages_inspected": true,
+    "review_date": "2026-10-29",
+    "evidence": ".local/docqa/crm062/page-01.png through page-16.png",
+    "note": "Manual review of this delivery; not a visual check performed by this script."
+  },
+  "scope": "Comprobaciones documentales y revisión visual; no se repitió entrenamiento ni se modificó el modelo."
+}

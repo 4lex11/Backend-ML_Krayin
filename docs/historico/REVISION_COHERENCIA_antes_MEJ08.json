@@ -1,0 +1,38 @@
+{
+  "date": "2026-10-29",
+  "checks": {
+    "test_metric_roc_auc": true,
+    "test_metric_average_precision": true,
+    "test_metric_brier": true,
+    "population": true,
+    "model_unchanged": true,
+    "original_retained": true,
+    "final_test_count": true,
+    "coverage": true,
+    "no_old_placeholders": true,
+    "academic_scope": true,
+    "historical_ML_LightGBM": true,
+    "historical_ML_Principal": true,
+    "historical_ML_RandomForest": true,
+    "historical_ML_XGBoost": true,
+    "historical_PruebaFallida": true,
+    "notebook_images_exist": true,
+    "conclusions_and_capture_guide": true,
+    "crm_documents": true,
+    "crm_results_in_thesis": true,
+    "pre_crm062_backup": true,
+    "final_document_links": true
+  },
+  "missing_references": [],
+  "docx_sha256": "9206fc22b93ab83d642e8f9b60ff4f804820c2d46088f2f9d86e16cae831d5be",
+  "original_sha256": "40925664a30584e83dfb064c3910901b5d6e6f6d5fecb07d995f977d1c165882",
+  "visual_review": {
+    "pages": 17,
+    "renderer": "Microsoft Word PDF export followed by bundled Poppler rasterization",
+    "all_pages_inspected": true,
+    "review_date": "2026-10-29",
+    "evidence": ".local/docqa/recomendaciones/page-01.png through page-17.png",
+    "note": "Pages 1-15 are pixel-identical to previously inspected CRM062 pages; pages 15-17 manually inspected after adding recommendations. This script does not perform visual inspection."
+  },
+  "scope": "Comprobaciones documentales y revisión visual; no se repitió entrenamiento ni se modificó el modelo."
+}

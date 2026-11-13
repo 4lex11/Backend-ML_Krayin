@@ -1,0 +1,112 @@
+{
+  "passed": true,
+  "first": {
+    "run_id": 16,
+    "prediction_id": 9,
+    "created": true,
+    "prediction": {
+      "status": "success",
+      "customer_id": "AA-10315",
+      "as_of": "2018-06-30",
+      "predicted_at": "2026-10-28T18:41:11.072554Z",
+      "model_version": "churn180-v1",
+      "schema_version": "churn180-v1",
+      "horizon_days": 180,
+      "probabilidad_churn": 0.3400690869680104,
+      "categoria_riesgo": "Medio",
+      "accion_sugerida": "Revisión humana; modelo experimental sin utilidad predictiva demostrada.",
+      "model_status": "experimental",
+      "automatic_action_allowed": false,
+      "limited_history": true
+    }
+  },
+  "repeat": {
+    "run_id": 17,
+    "prediction_id": 9,
+    "created": false,
+    "prediction": {
+      "status": "success",
+      "customer_id": "AA-10315",
+      "as_of": "2018-06-30",
+      "predicted_at": "2026-10-28T18:41:11.072554Z",
+      "model_version": "churn180-v1",
+      "schema_version": "churn180-v1",
+      "horizon_days": 180,
+      "probabilidad_churn": 0.3400690869680104,
+      "categoria_riesgo": "Medio",
+      "accion_sugerida": "Revisión humana; modelo experimental sin utilidad predictiva demostrada.",
+      "model_status": "experimental",
+      "automatic_action_allowed": false,
+      "limited_history": true
+    }
+  },
+  "failed_call": {
+    "status": "error",
+    "reason": "http_error",
+    "http_status": 401,
+    "attempts": 1
+  },
+  "database": {
+    "predictions": [
+      {
+        "id": 9,
+        "dataset_customer_id": 410,
+        "as_of": "2018-06-30",
+        "model_version": "churn180-v1",
+        "schema_version": "churn180-v1",
+        "horizon_days": 180,
+        "probability": 0.34006908696801,
+        "risk": "Medio",
+        "limited_history": 1,
+        "automatic_action_allowed": 0,
+        "model_status": "experimental",
+        "input_sha256": "b1e1798626ad71fdbfe6114a260b40b5a78185836a9d6a49fbfbfc6311cc203a",
+        "predicted_at": "2026-10-28 18:41:11.072554",
+        "response": "{\"status\":\"success\",\"customer_id\":\"AA-10315\",\"as_of\":\"2018-06-30\",\"predicted_at\":\"2026-10-28T18:41:11.072554Z\",\"model_version\":\"churn180-v1\",\"schema_version\":\"churn180-v1\",\"horizon_days\":180,\"probabilidad_churn\":0.3400690869680104,\"categoria_riesgo\":\"Medio\",\"accion_sugerida\":\"Revisi\\u00f3n humana; modelo experimental sin utilidad predictiva demostrada.\",\"model_status\":\"experimental\",\"automatic_action_allowed\":false,\"limited_history\":true}",
+        "created_at": "2026-10-29 00:11:11",
+        "updated_at": "2026-10-29 00:11:11"
+      }
+    ],
+    "recent_runs": [
+      {
+        "id": 18,
+        "dataset_customer_id": 410,
+        "as_of": "2018-06-30",
+        "input_sha256": "b1e1798626ad71fdbfe6114a260b40b5a78185836a9d6a49fbfbfc6311cc203a",
+        "status": "failed",
+        "prediction_id": null,
+        "error_code": "http_error",
+        "http_status": 401,
+        "attempts": 1,
+        "started_at": "2026-10-28 18:41:12.000000",
+        "finished_at": "2026-10-28 18:41:12.000000"
+      },
+      {
+        "id": 17,
+        "dataset_customer_id": 410,
+        "as_of": "2018-06-30",
+        "input_sha256": "b1e1798626ad71fdbfe6114a260b40b5a78185836a9d6a49fbfbfc6311cc203a",
+        "status": "reused",
+        "prediction_id": 9,
+        "error_code": null,
+        "http_status": null,
+        "attempts": null,
+        "started_at": "2026-10-28 18:41:11.000000",
+        "finished_at": "2026-10-28 18:41:11.000000"
+      },
+      {
+        "id": 16,
+        "dataset_customer_id": 410,
+        "as_of": "2018-06-30",
+        "input_sha256": "b1e1798626ad71fdbfe6114a260b40b5a78185836a9d6a49fbfbfc6311cc203a",
+        "status": "succeeded",
+        "prediction_id": 9,
+        "error_code": null,
+        "http_status": null,
+        "attempts": null,
+        "started_at": "2026-10-28 18:41:10.000000",
+        "finished_at": "2026-10-28 18:41:11.000000"
+      }
+    ]
+  }
+}

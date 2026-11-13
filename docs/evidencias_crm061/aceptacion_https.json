@@ -1,0 +1,96 @@
+{
+  "checked_at_utc": "2026-10-29T11:28:07.445041+00:00",
+  "scope": "local dataset demonstration; transactional acceptance",
+  "valid": {
+    "status": "success",
+    "created": false,
+    "probability": 0.3400690869680104,
+    "run_status": "reused",
+    "valid_prediction_preserved": true,
+    "panel_probability": 0.34006908696801,
+    "panel_latest_run": "reused",
+    "rollback_verified": true
+  },
+  "401": {
+    "status": "error",
+    "reason": "http_error",
+    "http_status": 401,
+    "attempts": 1,
+    "run_status": "failed",
+    "valid_prediction_preserved": true,
+    "panel_probability": 0.34006908696801,
+    "panel_latest_run": "failed",
+    "rollback_verified": true
+  },
+  "422": {
+    "status": "error",
+    "reason": "http_error",
+    "http_status": 422,
+    "attempts": 1,
+    "run_status": "failed",
+    "valid_prediction_preserved": true,
+    "panel_probability": 0.34006908696801,
+    "panel_latest_run": "failed",
+    "rollback_verified": true
+  },
+  "503": {
+    "status": "error",
+    "reason": "retries_exhausted",
+    "http_status": 503,
+    "attempts": 3,
+    "run_status": "failed",
+    "valid_prediction_preserved": true,
+    "panel_probability": 0.34006908696801,
+    "panel_latest_run": "failed",
+    "rollback_verified": true
+  },
+  "batch": {
+    "passed": true,
+    "queued": {
+      "added": 793,
+      "existing": 0
+    },
+    "worker": {
+      "completed": 431,
+      "error": 0,
+      "skipped": 362
+    },
+    "matched_clients": 431,
+    "max_probability_error": 4.9960036108132044e-15,
+    "limited_history_count": 95,
+    "panel_summary": {
+      "total": 793,
+      "saved": 431,
+      "high_count": 92,
+      "medium_count": 337,
+      "low_count": 2,
+      "missing_count": 362
+    },
+    "detail_verified": true,
+    "detail_advice": "limited",
+    "rollback_verified": true,
+    "elapsed_seconds": 42.2
+  },
+  "stopped": {
+    "status": "error",
+    "reason": "retries_exhausted",
+    "http_status": null,
+    "attempts": 3,
+    "run_status": "failed",
+    "valid_prediction_preserved": true,
+    "panel_probability": 0.34006908696801,
+    "panel_latest_run": "failed",
+    "rollback_verified": true
+  },
+  "recovery": {
+    "status": "success",
+    "created": false,
+    "probability": 0.3400690869680104,
+    "run_status": "reused",
+    "valid_prediction_preserved": true,
+    "panel_probability": 0.34006908696801,
+    "panel_latest_run": "reused",
+    "rollback_verified": true
+  },
+  "passed": true
+}

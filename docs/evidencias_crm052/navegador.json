@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "csrf_status": 419,
+  "created_entries": 2,
+  "current_status": "reviewed",
+  "stale_submit_rejected": true,
+  "reader_cannot_edit": true,
+  "reader_can_read_history": true,
+  "mobile_overflow": false,
+  "page_errors": []
+}

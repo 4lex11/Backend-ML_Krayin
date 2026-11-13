@@ -1,0 +1,20 @@
+{
+  "status_code": 200,
+  "request_id": "f147f712ea264f989292bce008d4359a",
+  "response": {
+    "status": "success",
+    "customer_id": "DEMO-001",
+    "as_of": "2018-06-30",
+    "predicted_at": "2026-10-27T19:17:14.875229Z",
+    "model_version": "churn180-v1",
+    "schema_version": "churn180-v1",
+    "horizon_days": 180,
+    "probabilidad_churn": 0.3400690869680104,
+    "categoria_riesgo": "Medio",
+    "accion_sugerida": "Revisión humana; modelo experimental sin utilidad predictiva demostrada.",
+    "model_status": "experimental",
+    "automatic_action_allowed": false,
+    "limited_history": true
+  },
+  "scope": "Servidor Uvicorn real en loopback, iniciado desde docs/; sin Krayin ni escrituras a base de datos."
+}

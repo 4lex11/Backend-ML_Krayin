@@ -1,0 +1,65 @@
+{
+  "release_version": "api-2.0.0-api07",
+  "model_version": "churn180-v1",
+  "model_sha256": "ad1eb6205eb40ec9cf53e3a429d7a2c3b16bc045e56dcf7f063eb3355243ffdd",
+  "https_verified": true,
+  "readiness": 200,
+  "single_and_batch": 200,
+  "no_key": 401,
+  "invalid_contract": 422,
+  "prediction_matches_artifact": true,
+  "experimental": true
+}
+Caída simulada del proceso propio; esperando recuperación del Programador de tareas.
+{
+  "release_version": "api-2.0.1-api07-test",
+  "model_version": "churn180-v1",
+  "model_sha256": "ad1eb6205eb40ec9cf53e3a429d7a2c3b16bc045e56dcf7f063eb3355243ffdd",
+  "https_verified": true,
+  "readiness": 200,
+  "single_and_batch": 200,
+  "no_key": 401,
+  "invalid_contract": 422,
+  "prediction_matches_artifact": true,
+  "experimental": true
+}
+{
+  "release_version": "api-2.0.0-api07",
+  "model_version": "churn180-v1",
+  "model_sha256": "ad1eb6205eb40ec9cf53e3a429d7a2c3b16bc045e56dcf7f063eb3355243ffdd",
+  "https_verified": true,
+  "readiness": 200,
+  "single_and_batch": 200,
+  "no_key": 401,
+  "invalid_contract": 422,
+  "prediction_matches_artifact": true,
+  "experimental": true
+}
+Tarea eliminada. Se conservan entregas, perfil y logs para auditoría.
+{
+  "checked_at_utc": "2026-10-28T06:48:12.2541270Z",
+  "platform": "Windows / Python 3.14.6",
+  "checks": {
+    "controlled_restart": true,
+    "automatic_restart_after_crash": true,
+    "recovery_seconds": 50.11,
+    "acceptance": {
+      "release_version": "api-2.0.0-api07",
+      "model_version": "churn180-v1",
+      "model_sha256": "ad1eb6205eb40ec9cf53e3a429d7a2c3b16bc045e56dcf7f063eb3355243ffdd",
+      "https_verified": true,
+      "readiness": 200,
+      "single_and_batch": 200,
+      "no_key": 401,
+      "invalid_contract": 422,
+      "prediction_matches_artifact": true,
+      "experimental": true
+    },
+    "update_to": "api-2.0.1-api07-test",
+    "rollback_to": "api-2.0.0-api07",
+    "graceful_stop_exit_code": 0,
+    "scheduler_recovery_interval": "PT1M",
+    "temporary_task_removed": true
+  },
+  "scope": "Entrega y servicio local Windows. Dos versiones de aplicación con el mismo modelo experimental. Sin Krayin ni reinicio del equipo."
+}

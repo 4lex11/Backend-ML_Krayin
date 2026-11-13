@@ -1,0 +1,89 @@
+PHPUnit 11.5.50 by Sebastian Bergmann and contributors.
+
+Runtime:       PHP 8.5.11
+Configuration: C:\xampp\htdocs\KrayinCRM\laravel-crm-2.2\phpunit.xml
+
+DDDDDDDDDDD                                                       11 / 11 (100%)
+
+Time: 00:06.233, Memory: 44.00 MB
+
+11 tests triggered 2 PHP deprecations:
+
+1) C:\xampp\htdocs\KrayinCRM\laravel-crm-2.2\config\database.php:62
+Constant PDO::MYSQL_ATTR_SSL_CA is deprecated since 8.5, use Pdo\Mysql::ATTR_SSL_CA instead
+
+Triggered by:
+
+* ChurnPanelAccessTest::test_case1
+  C:\xampp\htdocs\KrayinCRM\laravel-crm-2.2\tests\Feature\ChurnPanelAccessTest.php:38
+
+* ChurnPanelAccessTest::test_case10
+  C:\xampp\htdocs\KrayinCRM\laravel-crm-2.2\tests\Feature\ChurnPanelAccessTest.php:117
+
+* ChurnPanelAccessTest::test_case2#0
+  C:\xampp\htdocs\KrayinCRM\laravel-crm-2.2\tests\Feature\ChurnPanelAccessTest.php:45
+
+* ChurnPanelAccessTest::test_case2#1
+  C:\xampp\htdocs\KrayinCRM\laravel-crm-2.2\tests\Feature\ChurnPanelAccessTest.php:45
+
+* ChurnPanelAccessTest::test_case3
+  C:\xampp\htdocs\KrayinCRM\laravel-crm-2.2\tests\Feature\ChurnPanelAccessTest.php:53
+
+* ChurnPanelAccessTest::test_case4
+  C:\xampp\htdocs\KrayinCRM\laravel-crm-2.2\tests\Feature\ChurnPanelAccessTest.php:63
+
+* ChurnPanelAccessTest::test_case5
+  C:\xampp\htdocs\KrayinCRM\laravel-crm-2.2\tests\Feature\ChurnPanelAccessTest.php:70
+
+* ChurnPanelAccessTest::test_case6
+  C:\xampp\htdocs\KrayinCRM\laravel-crm-2.2\tests\Feature\ChurnPanelAccessTest.php:80
+
+* ChurnPanelAccessTest::test_case7
+  C:\xampp\htdocs\KrayinCRM\laravel-crm-2.2\tests\Feature\ChurnPanelAccessTest.php:88
+
+* ChurnPanelAccessTest::test_case8
+  C:\xampp\htdocs\KrayinCRM\laravel-crm-2.2\tests\Feature\ChurnPanelAccessTest.php:99
+
+* ChurnPanelAccessTest::test_case9
+  C:\xampp\htdocs\KrayinCRM\laravel-crm-2.2\tests\Feature\ChurnPanelAccessTest.php:108
+
+2) C:\xampp\htdocs\KrayinCRM\laravel-crm-2.2\config\database.php:82
+Constant PDO::MYSQL_ATTR_SSL_CA is deprecated since 8.5, use Pdo\Mysql::ATTR_SSL_CA instead
+
+Triggered by:
+
+* ChurnPanelAccessTest::test_case1
+  C:\xampp\htdocs\KrayinCRM\laravel-crm-2.2\tests\Feature\ChurnPanelAccessTest.php:38
+
+* ChurnPanelAccessTest::test_case10
+  C:\xampp\htdocs\KrayinCRM\laravel-crm-2.2\tests\Feature\ChurnPanelAccessTest.php:117
+
+* ChurnPanelAccessTest::test_case2#0
+  C:\xampp\htdocs\KrayinCRM\laravel-crm-2.2\tests\Feature\ChurnPanelAccessTest.php:45
+
+* ChurnPanelAccessTest::test_case2#1
+  C:\xampp\htdocs\KrayinCRM\laravel-crm-2.2\tests\Feature\ChurnPanelAccessTest.php:45
+
+* ChurnPanelAccessTest::test_case3
+  C:\xampp\htdocs\KrayinCRM\laravel-crm-2.2\tests\Feature\ChurnPanelAccessTest.php:53
+
+* ChurnPanelAccessTest::test_case4
+  C:\xampp\htdocs\KrayinCRM\laravel-crm-2.2\tests\Feature\ChurnPanelAccessTest.php:63
+
+* ChurnPanelAccessTest::test_case5
+  C:\xampp\htdocs\KrayinCRM\laravel-crm-2.2\tests\Feature\ChurnPanelAccessTest.php:70
+
+* ChurnPanelAccessTest::test_case6
+  C:\xampp\htdocs\KrayinCRM\laravel-crm-2.2\tests\Feature\ChurnPanelAccessTest.php:80
+
+* ChurnPanelAccessTest::test_case7
+  C:\xampp\htdocs\KrayinCRM\laravel-crm-2.2\tests\Feature\ChurnPanelAccessTest.php:88
+
+* ChurnPanelAccessTest::test_case8
+  C:\xampp\htdocs\KrayinCRM\laravel-crm-2.2\tests\Feature\ChurnPanelAccessTest.php:99
+
+* ChurnPanelAccessTest::test_case9
+  C:\xampp\htdocs\KrayinCRM\laravel-crm-2.2\tests\Feature\ChurnPanelAccessTest.php:108
+
+OK, but there were issues!
+Tests: 11, Assertions: 31, Deprecations: 2.

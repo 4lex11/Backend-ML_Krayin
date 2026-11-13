@@ -1,0 +1,246 @@
+{
+  "created_utc": "2026-10-29T20:11:37.935320+00:00",
+  "seed": 42,
+  "calibration": "sigmoid",
+  "candidates": [
+    {
+      "id": "logistic_original_a",
+      "family": "logistic",
+      "features": "original",
+      "params": {
+        "C": 0.1,
+        "solver": "lbfgs",
+        "max_iter": 3000,
+        "random_state": 42
+      }
+    },
+    {
+      "id": "logistic_original_b",
+      "family": "logistic",
+      "features": "original",
+      "params": {
+        "C": 1.0,
+        "solver": "lbfgs",
+        "max_iter": 3000,
+        "random_state": 42
+      }
+    },
+    {
+      "id": "forest_original_a",
+      "family": "forest",
+      "features": "original",
+      "params": {
+        "n_estimators": 150,
+        "max_depth": 3,
+        "min_samples_leaf": 10,
+        "random_state": 42,
+        "n_jobs": 1
+      }
+    },
+    {
+      "id": "forest_original_b",
+      "family": "forest",
+      "features": "original",
+      "params": {
+        "n_estimators": 150,
+        "max_depth": 5,
+        "min_samples_leaf": 20,
+        "random_state": 42,
+        "n_jobs": 1
+      }
+    },
+    {
+      "id": "lightgbm_original_a",
+      "family": "lightgbm",
+      "features": "original",
+      "params": {
+        "n_estimators": 100,
+        "max_depth": 2,
+        "num_leaves": 4,
+        "min_child_samples": 20,
+        "reg_lambda": 1.0,
+        "learning_rate": 0.03,
+        "random_state": 42,
+        "n_jobs": 1,
+        "verbosity": -1
+      }
+    },
+    {
+      "id": "lightgbm_original_b",
+      "family": "lightgbm",
+      "features": "original",
+      "params": {
+        "n_estimators": 100,
+        "max_depth": 3,
+        "num_leaves": 7,
+        "min_child_samples": 20,
+        "reg_lambda": 1.0,
+        "learning_rate": 0.03,
+        "random_state": 42,
+        "n_jobs": 1,
+        "verbosity": -1
+      }
+    },
+    {
+      "id": "logistic_temporal_a",
+      "family": "logistic",
+      "features": "temporal",
+      "params": {
+        "C": 0.1,
+        "solver": "lbfgs",
+        "max_iter": 3000,
+        "random_state": 42
+      }
+    },
+    {
+      "id": "logistic_temporal_b",
+      "family": "logistic",
+      "features": "temporal",
+      "params": {
+        "C": 1.0,
+        "solver": "lbfgs",
+        "max_iter": 3000,
+        "random_state": 42
+      }
+    },
+    {
+      "id": "forest_temporal_a",
+      "family": "forest",
+      "features": "temporal",
+      "params": {
+        "n_estimators": 150,
+        "max_depth": 3,
+        "min_samples_leaf": 10,
+        "random_state": 42,
+        "n_jobs": 1
+      }
+    },
+    {
+      "id": "forest_temporal_b",
+      "family": "forest",
+      "features": "temporal",
+      "params": {
+        "n_estimators": 150,
+        "max_depth": 5,
+        "min_samples_leaf": 20,
+        "random_state": 42,
+        "n_jobs": 1
+      }
+    },
+    {
+      "id": "lightgbm_temporal_a",
+      "family": "lightgbm",
+      "features": "temporal",
+      "params": {
+        "n_estimators": 100,
+        "max_depth": 2,
+        "num_leaves": 4,
+        "min_child_samples": 20,
+        "reg_lambda": 1.0,
+        "learning_rate": 0.03,
+        "random_state": 42,
+        "n_jobs": 1,
+        "verbosity": -1
+      }
+    },
+    {
+      "id": "lightgbm_temporal_b",
+      "family": "lightgbm",
+      "features": "temporal",
+      "params": {
+        "n_estimators": 100,
+        "max_depth": 3,
+        "num_leaves": 7,
+        "min_child_samples": 20,
+        "reg_lambda": 1.0,
+        "learning_rate": 0.03,
+        "random_state": 42,
+        "n_jobs": 1,
+        "verbosity": -1
+      }
+    },
+    {
+      "id": "logistic_combined_a",
+      "family": "logistic",
+      "features": "combined",
+      "params": {
+        "C": 0.1,
+        "solver": "lbfgs",
+        "max_iter": 3000,
+        "random_state": 42
+      }
+    },
+    {
+      "id": "logistic_combined_b",
+      "family": "logistic",
+      "features": "combined",
+      "params": {
+        "C": 1.0,
+        "solver": "lbfgs",
+        "max_iter": 3000,
+        "random_state": 42
+      }
+    },
+    {
+      "id": "forest_combined_a",
+      "family": "forest",
+      "features": "combined",
+      "params": {
+        "n_estimators": 150,
+        "max_depth": 3,
+        "min_samples_leaf": 10,
+        "random_state": 42,
+        "n_jobs": 1
+      }
+    },
+    {
+      "id": "forest_combined_b",
+      "family": "forest",
+      "features": "combined",
+      "params": {
+        "n_estimators": 150,
+        "max_depth": 5,
+        "min_samples_leaf": 20,
+        "random_state": 42,
+        "n_jobs": 1
+      }
+    },
+    {
+      "id": "lightgbm_combined_a",
+      "family": "lightgbm",
+      "features": "combined",
+      "params": {
+        "n_estimators": 100,
+        "max_depth": 2,
+        "num_leaves": 4,
+        "min_child_samples": 20,
+        "reg_lambda": 1.0,
+        "learning_rate": 0.03,
+        "random_state": 42,
+        "n_jobs": 1,
+        "verbosity": -1
+      }
+    },
+    {
+      "id": "lightgbm_combined_b",
+      "family": "lightgbm",
+      "features": "combined",
+      "params": {
+        "n_estimators": 100,
+        "max_depth": 3,
+        "num_leaves": 7,
+        "min_child_samples": 20,
+        "reg_lambda": 1.0,
+        "learning_rate": 0.03,
+        "random_state": 42,
+        "n_jobs": 1,
+        "verbosity": -1
+      }
+    }
+  ],
+  "evaluation_folds": [
+    "D1",
+    "D2"
+  ],
+  "E1_used": false
+}

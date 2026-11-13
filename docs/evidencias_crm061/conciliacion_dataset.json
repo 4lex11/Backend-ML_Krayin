@@ -1,0 +1,33 @@
+{
+    "dataset_sha256": "dbb0f167b27ccf02d7ff8cb0446a9abc6dbc3522e83cf9daa6939801acfdd196",
+    "database_version": "10.4.32-MariaDB",
+    "php_cli": "8.5.11",
+    "summary": {
+        "line_count": 9800,
+        "order_count": 4922,
+        "unique_lines": 9800,
+        "first_date": "2015-01-03",
+        "last_date": "2018-12-30",
+        "sales_total": "2261536.782700"
+    },
+    "mapped_customers": 793,
+    "unique_persons": 793,
+    "link_methods": [
+        {
+            "link_method": "legacy_customer_id",
+            "n": 793
+        }
+    ],
+    "mismatched_rows": 0,
+    "missing_rows": 0,
+    "eligible_at_2018_06_30": 431,
+    "dataset": {
+        "source": "superstore-sales",
+        "sha256": "dbb0f167b27ccf02d7ff8cb0446a9abc6dbc3522e83cf9daa6939801acfdd196",
+        "default_cutoff": "2018-06-30",
+        "is_demo": 1,
+        "imported_at": "2026-10-28 23:59:15"
+    },
+    "migration_applied": true,
+    "passed": true
+}

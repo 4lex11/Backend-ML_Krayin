@@ -1,0 +1,31 @@
+{
+  "date": "2026-10-28",
+  "checks": {
+    "test_metric_roc_auc": true,
+    "test_metric_average_precision": true,
+    "test_metric_brier": true,
+    "population": true,
+    "model_unchanged": true,
+    "original_retained": true,
+    "final_test_count": true,
+    "coverage": true,
+    "no_old_placeholders": true,
+    "academic_scope": true,
+    "historical_ML_LightGBM": true,
+    "historical_ML_Principal": true,
+    "historical_ML_RandomForest": true,
+    "historical_ML_XGBoost": true,
+    "historical_PruebaFallida": true,
+    "notebook_images_exist": true,
+    "conclusions_and_capture_guide": true
+  },
+  "missing_references": [],
+  "docx_sha256": "e5900cfedef37b1c9d4bd258929d9b01e433ce0eb21aa87f6a7ad68571bc2fd7",
+  "original_sha256": "40925664a30584e83dfb064c3910901b5d6e6f6d5fecb07d995f977d1c165882",
+  "visual_review": {
+    "pages": 14,
+    "renderer": "Microsoft Word PDF export followed by bundled Poppler rasterization",
+    "all_pages_inspected": true
+  },
+  "scope": "Comprobaciones documentales y revisión visual; no se repitió entrenamiento ni se modificó el modelo."
+}

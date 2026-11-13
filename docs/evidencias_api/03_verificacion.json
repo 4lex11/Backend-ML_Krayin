@@ -1,0 +1,40 @@
+{
+  "request": {
+    "customer_id": "DEMO-001",
+    "as_of": "2018-06-30",
+    "features": {
+      "Recency": 1,
+      "Frequency": 1,
+      "Monetary_Sum": 374.48,
+      "Monetary_Mean": 187.24,
+      "Monetary_Std": 248.4773229089528,
+      "Cat_Count": 1,
+      "SubCat_Count": 2
+    }
+  },
+  "response": {
+    "status": "success",
+    "customer_id": "DEMO-001",
+    "as_of": "2018-06-30",
+    "predicted_at": "2026-10-27T19:16:00.315627Z",
+    "model_version": "churn180-v1",
+    "schema_version": "churn180-v1",
+    "horizon_days": 180,
+    "probabilidad_churn": 0.3400690869680104,
+    "categoria_riesgo": "Medio",
+    "accion_sugerida": "Revisión humana; modelo experimental sin utilidad predictiva demostrada.",
+    "model_status": "experimental",
+    "automatic_action_allowed": false,
+    "limited_history": true
+  },
+  "response_status": 200,
+  "invalid_request_status": 422,
+  "unauthorized_status": 401,
+  "readiness": {
+    "status": "ready",
+    "model_version": "churn180-v1",
+    "model_status": "experimental",
+    "automatic_action_allowed": false
+  },
+  "scope": "TestClient ASGI en memoria, sin red real ni persistencia en Krayin."
+}

@@ -1,0 +1,187 @@
+{
+  "slow_body_check": {
+    "occupied_slots": 4,
+    "saturation_status": 503,
+    "incomplete_body_status": 408,
+    "recovery_status": 200
+  },
+  "checked_at_utc": "2026-10-28T07:08:00.759864+00:00",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "python": "3.14.6",
+  "logical_cpus": 16,
+  "model_version": "churn180-v1",
+  "scenarios": [
+    {
+      "batch_size": 1,
+      "concurrency": 1,
+      "requests": 80,
+      "status_counts": {
+        "200": 80
+      },
+      "successful_latency_ms": {
+        "p50": 13.07,
+        "p95": 32.62,
+        "p99": 34.52
+      },
+      "successful_requests_per_second": 65.13,
+      "successful_customers_per_second": 65.13,
+      "elapsed_seconds": 1.228,
+      "before": {
+        "cpu_seconds": 2.78125,
+        "rss_mib": 188.84375,
+        "sum_process_peak_rss_mib": 189.5625
+      },
+      "after": {
+        "cpu_seconds": 3.5,
+        "rss_mib": 189.328125,
+        "sum_process_peak_rss_mib": 189.5625
+      },
+      "cpu_seconds_during_load_upper_bound": 0.719,
+      "recovery_http_status": 200
+    },
+    {
+      "batch_size": 1,
+      "concurrency": 4,
+      "requests": 80,
+      "status_counts": {
+        "200": 80
+      },
+      "successful_latency_ms": {
+        "p50": 22.29,
+        "p95": 60.58,
+        "p99": 69.12
+      },
+      "successful_requests_per_second": 133.1,
+      "successful_customers_per_second": 133.1,
+      "elapsed_seconds": 0.601,
+      "before": {
+        "cpu_seconds": 3.5625,
+        "rss_mib": 189.33984375,
+        "sum_process_peak_rss_mib": 189.5625
+      },
+      "after": {
+        "cpu_seconds": 4.09375,
+        "rss_mib": 191.91796875,
+        "sum_process_peak_rss_mib": 191.91796875
+      },
+      "cpu_seconds_during_load_upper_bound": 0.531,
+      "recovery_http_status": 200
+    },
+    {
+      "batch_size": 1,
+      "concurrency": 16,
+      "requests": 80,
+      "status_counts": {
+        "200": 16,
+        "503": 64
+      },
+      "successful_latency_ms": {
+        "p50": 92.55,
+        "p95": 114.22,
+        "p99": 115.13
+      },
+      "successful_requests_per_second": 64.91,
+      "successful_customers_per_second": 64.91,
+      "elapsed_seconds": 0.246,
+      "before": {
+        "cpu_seconds": 4.109375,
+        "rss_mib": 191.91796875,
+        "sum_process_peak_rss_mib": 191.91796875
+      },
+      "after": {
+        "cpu_seconds": 4.359375,
+        "rss_mib": 189.890625,
+        "sum_process_peak_rss_mib": 194.0859375
+      },
+      "cpu_seconds_during_load_upper_bound": 0.25,
+      "recovery_http_status": 200
+    },
+    {
+      "batch_size": 500,
+      "concurrency": 1,
+      "requests": 80,
+      "status_counts": {
+        "200": 80
+      },
+      "successful_latency_ms": {
+        "p50": 38.81,
+        "p95": 62.51,
+        "p99": 82.24
+      },
+      "successful_requests_per_second": 24.28,
+      "successful_customers_per_second": 12140.12,
+      "elapsed_seconds": 3.295,
+      "before": {
+        "cpu_seconds": 4.40625,
+        "rss_mib": 193.28515625,
+        "sum_process_peak_rss_mib": 194.0859375
+      },
+      "after": {
+        "cpu_seconds": 6.6875,
+        "rss_mib": 193.3046875,
+        "sum_process_peak_rss_mib": 194.0859375
+      },
+      "cpu_seconds_during_load_upper_bound": 2.281,
+      "recovery_http_status": 200
+    },
+    {
+      "batch_size": 500,
+      "concurrency": 4,
+      "requests": 80,
+      "status_counts": {
+        "200": 80
+      },
+      "successful_latency_ms": {
+        "p50": 113.81,
+        "p95": 158.48,
+        "p99": 175.79
+      },
+      "successful_requests_per_second": 33.77,
+      "successful_customers_per_second": 16886.89,
+      "elapsed_seconds": 2.369,
+      "before": {
+        "cpu_seconds": 6.78125,
+        "rss_mib": 193.3046875,
+        "sum_process_peak_rss_mib": 194.0859375
+      },
+      "after": {
+        "cpu_seconds": 9.0625,
+        "rss_mib": 199.07421875,
+        "sum_process_peak_rss_mib": 201.25
+      },
+      "cpu_seconds_during_load_upper_bound": 2.281,
+      "recovery_http_status": 200
+    },
+    {
+      "batch_size": 500,
+      "concurrency": 16,
+      "requests": 80,
+      "status_counts": {
+        "200": 16,
+        "503": 64
+      },
+      "successful_latency_ms": {
+        "p50": 407.67,
+        "p95": 484.16,
+        "p99": 495.33
+      },
+      "successful_requests_per_second": 14.98,
+      "successful_customers_per_second": 7489.69,
+      "elapsed_seconds": 1.068,
+      "before": {
+        "cpu_seconds": 9.171875,
+        "rss_mib": 199.07421875,
+        "sum_process_peak_rss_mib": 201.25
+      },
+      "after": {
+        "cpu_seconds": 10.078125,
+        "rss_mib": 197.3515625,
+        "sum_process_peak_rss_mib": 206.328125
+      },
+      "cpu_seconds_during_load_upper_bound": 0.906,
+      "recovery_http_status": 200
+    }
+  ],
+  "scope": "Loopback HTTPS con validación de certificado; conexión TLS nueva por solicitud; cliente y servidor en el mismo equipo; 3 calentamientos y 80 solicitudes por escenario; sin reintentos. Memoria: instantáneas y suma de máximos por proceso desde el arranque, no pico simultáneo. CPU incluye consulta de recursos posterior. No prueba prolongada ni garantía de capacidad en otro servidor.",
+  "acceptance": "Sin 503 con concurrencia 1/4, sin errores inesperados, p95 exitoso <5000 ms y recuperación 200 en todos los escenarios."
+}

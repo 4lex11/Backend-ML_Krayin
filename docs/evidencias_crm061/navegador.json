@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "desktop": [
+    1440,
+    1000
+  ],
+  "mobile": [
+    390,
+    844
+  ],
+  "probability": "34.01 %",
+  "input_hash_matches": true,
+  "mobile_overflow": false,
+  "csrf_status": 419,
+  "duplicate_request_preserved_one": true,
+  "queue_pending": 1,
+  "queue_completed": 1,
+  "worker": "{\"completed\":1,\"error\":0,\"skipped\":0}",
+  "guidance": "limited",
+  "manual_review": "reviewed",
+  "page_errors": []
+}

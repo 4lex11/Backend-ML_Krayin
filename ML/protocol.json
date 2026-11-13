@@ -1,0 +1,17 @@
+{
+  "schema_version": "churn180-v1",
+  "seed": 42,
+  "date_format": "%d/%m/%Y",
+  "lookback_days": 365,
+  "horizon_days": 180,
+  "eligible_recency_max_days": 180,
+  "train_cutoffs": ["2016-06-30", "2016-12-31"],
+  "calibration_cutoff": "2017-06-30",
+  "validation_cutoff": "2017-12-31",
+  "test_cutoff": "2018-06-30",
+  "selection": "validation_average_precision_then_lower_brier_then_name",
+  "threshold_selection": "maximum_validation_F2_then_precision_then_threshold",
+  "high_risk_validation_quantile": 0.8,
+  "bootstrap_repetitions": 500,
+  "notes": "Protocolo fijado antes de ejecutar la nueva evaluacion. Clientes activos: ultima compra hace 180 dias o menos. Churn: ninguna compra en (corte, corte+180 dias]. IDs excluidos de las variables. Clientes pueden reaparecer en periodos posteriores: evaluacion prospectiva de una cartera conocida."
+}

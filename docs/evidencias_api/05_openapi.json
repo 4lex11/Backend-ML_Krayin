@@ -1,0 +1,546 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "CRM - Predicción prospectiva de abandono",
+    "description": "Horizonte de 180 días. Prototipo experimental: no ejecutar campañas automáticamente.",
+    "version": "2.0.0"
+  },
+  "paths": {
+    "/health/live": {
+      "get": {
+        "summary": "Live",
+        "description": "Vida del proceso; no equivale a utilidad del modelo.",
+        "operationId": "live_health_live_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": {
+                    "type": "string"
+                  },
+                  "type": "object",
+                  "title": "Response Live Health Live Get"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/health/ready": {
+      "get": {
+        "summary": "Ready",
+        "description": "Separa disponibilidad técnica del estado científico.",
+        "operationId": "ready_health_ready_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": true,
+                  "type": "object",
+                  "title": "Response Ready Health Ready Get"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "APIKeyHeader": []
+          }
+        ]
+      }
+    },
+    "/v1/predict": {
+      "post": {
+        "summary": "Predict",
+        "description": "Predicción con variables ya calculadas conforme al contrato.",
+        "operationId": "predict_v1_predict_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PredictionRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PredictionResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "APIKeyHeader": []
+          }
+        ]
+      }
+    },
+    "/v1/predict/batch": {
+      "post": {
+        "summary": "Predict Batch",
+        "description": "Hasta 500 clientes; valida el lote completo antes de inferir.",
+        "operationId": "predict_batch_v1_predict_batch_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/BatchRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "items": {
+                    "$ref": "#/components/schemas/PredictionResponse"
+                  },
+                  "type": "array",
+                  "title": "Response Predict Batch V1 Predict Batch Post"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "APIKeyHeader": []
+          }
+        ]
+      }
+    },
+    "/v1/predict/transactions": {
+      "post": {
+        "summary": "Predict Transactions",
+        "description": "Calcula variables mediante la misma función usada para entrenar.",
+        "operationId": "predict_transactions_v1_predict_transactions_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TransactionRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PredictionResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "APIKeyHeader": []
+          }
+        ]
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "BatchRequest": {
+        "properties": {
+          "customers": {
+            "items": {
+              "$ref": "#/components/schemas/PredictionRequest"
+            },
+            "type": "array",
+            "maxItems": 500,
+            "minItems": 1,
+            "title": "Customers"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "customers"
+        ],
+        "title": "BatchRequest",
+        "description": "Lote acotado; duplicados cliente-fecha se rechazan."
+      },
+      "CustomerFeatures": {
+        "properties": {
+          "Recency": {
+            "type": "integer",
+            "maximum": 180.0,
+            "minimum": 0.0,
+            "title": "Recency"
+          },
+          "Frequency": {
+            "type": "integer",
+            "maximum": 1000000.0,
+            "minimum": 1.0,
+            "title": "Frequency"
+          },
+          "Monetary_Sum": {
+            "type": "number",
+            "maximum": 1000000000000.0,
+            "minimum": 0.0,
+            "title": "Monetary Sum"
+          },
+          "Monetary_Mean": {
+            "type": "number",
+            "maximum": 1000000000000.0,
+            "minimum": 0.0,
+            "title": "Monetary Mean"
+          },
+          "Monetary_Std": {
+            "type": "number",
+            "maximum": 1000000000000.0,
+            "minimum": 0.0,
+            "title": "Monetary Std"
+          },
+          "Cat_Count": {
+            "type": "integer",
+            "maximum": 1000000.0,
+            "minimum": 1.0,
+            "title": "Cat Count"
+          },
+          "SubCat_Count": {
+            "type": "integer",
+            "maximum": 1000000.0,
+            "minimum": 1.0,
+            "title": "Subcat Count"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "Recency",
+          "Frequency",
+          "Monetary_Sum",
+          "Monetary_Mean",
+          "Monetary_Std",
+          "Cat_Count",
+          "SubCat_Count"
+        ],
+        "title": "CustomerFeatures",
+        "description": "Agregados del último año de un cliente con compra en los últimos 180 días."
+      },
+      "HTTPValidationError": {
+        "properties": {
+          "detail": {
+            "items": {
+              "$ref": "#/components/schemas/ValidationError"
+            },
+            "type": "array",
+            "title": "Detail"
+          }
+        },
+        "type": "object",
+        "title": "HTTPValidationError"
+      },
+      "PredictionRequest": {
+        "properties": {
+          "customer_id": {
+            "type": "string",
+            "maxLength": 100,
+            "minLength": 1,
+            "pattern": "^[A-Za-z0-9_.:-]+$",
+            "title": "Customer Id"
+          },
+          "as_of": {
+            "type": "string",
+            "format": "date",
+            "title": "As Of"
+          },
+          "features": {
+            "$ref": "#/components/schemas/CustomerFeatures"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "customer_id",
+          "as_of",
+          "features"
+        ],
+        "title": "PredictionRequest",
+        "description": "Cliente y fecha de corte explícitos para trazabilidad."
+      },
+      "PredictionResponse": {
+        "properties": {
+          "status": {
+            "type": "string",
+            "const": "success",
+            "title": "Status",
+            "default": "success"
+          },
+          "customer_id": {
+            "type": "string",
+            "title": "Customer Id"
+          },
+          "as_of": {
+            "type": "string",
+            "format": "date",
+            "title": "As Of"
+          },
+          "predicted_at": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Predicted At"
+          },
+          "model_version": {
+            "type": "string",
+            "title": "Model Version"
+          },
+          "schema_version": {
+            "type": "string",
+            "const": "churn180-v1",
+            "title": "Schema Version",
+            "default": "churn180-v1"
+          },
+          "horizon_days": {
+            "type": "integer",
+            "const": 180,
+            "title": "Horizon Days",
+            "default": 180
+          },
+          "probabilidad_churn": {
+            "type": "number",
+            "title": "Probabilidad Churn"
+          },
+          "categoria_riesgo": {
+            "type": "string",
+            "enum": [
+              "Bajo",
+              "Medio",
+              "Alto"
+            ],
+            "title": "Categoria Riesgo"
+          },
+          "accion_sugerida": {
+            "type": "string",
+            "title": "Accion Sugerida",
+            "default": "Revisión humana; modelo experimental sin utilidad predictiva demostrada."
+          },
+          "model_status": {
+            "type": "string",
+            "const": "experimental",
+            "title": "Model Status",
+            "default": "experimental"
+          },
+          "automatic_action_allowed": {
+            "type": "boolean",
+            "const": false,
+            "title": "Automatic Action Allowed",
+            "default": false
+          },
+          "limited_history": {
+            "type": "boolean",
+            "title": "Limited History"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "customer_id",
+          "as_of",
+          "predicted_at",
+          "model_version",
+          "probabilidad_churn",
+          "categoria_riesgo",
+          "limited_history"
+        ],
+        "title": "PredictionResponse",
+        "description": "Riesgo experimental, sin afirmar fidelización ni ejecutar acciones."
+      },
+      "Transaction": {
+        "properties": {
+          "line_id": {
+            "type": "string",
+            "maxLength": 100,
+            "minLength": 1,
+            "pattern": "^[A-Za-z0-9_.:-]+$",
+            "title": "Line Id"
+          },
+          "order_id": {
+            "type": "string",
+            "maxLength": 100,
+            "minLength": 1,
+            "pattern": "^[A-Za-z0-9_.:-]+$",
+            "title": "Order Id"
+          },
+          "order_date": {
+            "type": "string",
+            "format": "date",
+            "title": "Order Date"
+          },
+          "sales": {
+            "type": "number",
+            "maximum": 1000000000000.0,
+            "minimum": 0.0,
+            "title": "Sales"
+          },
+          "category": {
+            "type": "string",
+            "maxLength": 100,
+            "minLength": 1,
+            "title": "Category"
+          },
+          "subcategory": {
+            "type": "string",
+            "maxLength": 100,
+            "minLength": 1,
+            "title": "Subcategory"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "line_id",
+          "order_id",
+          "order_date",
+          "sales",
+          "category",
+          "subcategory"
+        ],
+        "title": "Transaction",
+        "description": "Una línea de venta; líneas legítimas diferentes requieren IDs distintos."
+      },
+      "TransactionRequest": {
+        "properties": {
+          "customer_id": {
+            "type": "string",
+            "maxLength": 100,
+            "minLength": 1,
+            "pattern": "^[A-Za-z0-9_.:-]+$",
+            "title": "Customer Id"
+          },
+          "as_of": {
+            "type": "string",
+            "format": "date",
+            "title": "As Of"
+          },
+          "history_start": {
+            "type": "string",
+            "format": "date",
+            "title": "History Start"
+          },
+          "transactions": {
+            "items": {
+              "$ref": "#/components/schemas/Transaction"
+            },
+            "type": "array",
+            "maxItems": 5000,
+            "minItems": 1,
+            "title": "Transactions"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "customer_id",
+          "as_of",
+          "history_start",
+          "transactions"
+        ],
+        "title": "TransactionRequest",
+        "description": "Cobertura declarada por el origen; Python calcula las variables."
+      },
+      "ValidationError": {
+        "properties": {
+          "loc": {
+            "items": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "integer"
+                }
+              ]
+            },
+            "type": "array",
+            "title": "Location"
+          },
+          "msg": {
+            "type": "string",
+            "title": "Message"
+          },
+          "type": {
+            "type": "string",
+            "title": "Error Type"
+          },
+          "input": {
+            "title": "Input"
+          },
+          "ctx": {
+            "type": "object",
+            "title": "Context"
+          }
+        },
+        "type": "object",
+        "required": [
+          "loc",
+          "msg",
+          "type"
+        ],
+        "title": "ValidationError"
+      }
+    },
+    "securitySchemes": {
+      "APIKeyHeader": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "X-API-Key"
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+[
+  {
+    "variant": "sigmoid",
+    "precision_at_20": 0.5182270091135046,
+    "average_precision": 0.4583689891965959,
+    "brier": 0.2686703370240803,
+    "log_loss": 0.7312833155827224
+  },
+  {
+    "variant": "raw",
+    "precision_at_20": 0.4196354598177299,
+    "average_precision": 0.4261862303233799,
+    "brier": 0.25294512834839944,
+    "log_loss": 0.7000121306491213
+  }
+]

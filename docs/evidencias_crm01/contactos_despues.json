@@ -1,0 +1,10 @@
+{
+    "persons": {
+        "count": 793,
+        "sha256": "ec1c6d66b4a3afc51a0d9d827737a285b8dc5e5da6204a86508145074ed8c500"
+    },
+    "attribute_values": {
+        "count": 3965,
+        "sha256": "4a004a1c420dfce29bc33fd57663700436075bedae6c2f9f3a1fa1b3f12453c0"
+    }
+}

@@ -1,0 +1,78 @@
+{
+  "date": "2026-10-29",
+  "protocol_sha256": "eedf2bf7e5993246af8efd4c76f4526a08611961f38797146b2b62acf823df2a",
+  "checks": {
+    "dataset_hash": true,
+    "clean_rows": true,
+    "feature_schema": true,
+    "all_cutoffs_have_customers": true,
+    "all_cutoffs_are_finite": true,
+    "all_cutoffs_ignore_future_rows": true
+  },
+  "cutoffs": [
+    {
+      "id": "D1",
+      "cutoff": "2017-06-30",
+      "customers": 351,
+      "columns": [
+        "Orders_30d",
+        "Orders_90d",
+        "Orders_180d",
+        "Sales_30d",
+        "Sales_90d",
+        "Sales_180d",
+        "Recent90_To_Prior90_Order_Ratio",
+        "ActiveMonths_365d",
+        "MeanOrderGapDays",
+        "StdOrderGapDays",
+        "HasMultipleOrders"
+      ],
+      "all_finite": true,
+      "single_order_customers": 116,
+      "future_mutation_does_not_change_features": true
+    },
+    {
+      "id": "D2",
+      "cutoff": "2017-12-31",
+      "customers": 510,
+      "columns": [
+        "Orders_30d",
+        "Orders_90d",
+        "Orders_180d",
+        "Sales_30d",
+        "Sales_90d",
+        "Sales_180d",
+        "Recent90_To_Prior90_Order_Ratio",
+        "ActiveMonths_365d",
+        "MeanOrderGapDays",
+        "StdOrderGapDays",
+        "HasMultipleOrders"
+      ],
+      "all_finite": true,
+      "single_order_customers": 167,
+      "future_mutation_does_not_change_features": true
+    },
+    {
+      "id": "E1",
+      "cutoff": "2018-06-30",
+      "customers": 431,
+      "columns": [
+        "Orders_30d",
+        "Orders_90d",
+        "Orders_180d",
+        "Sales_30d",
+        "Sales_90d",
+        "Sales_180d",
+        "Recent90_To_Prior90_Order_Ratio",
+        "ActiveMonths_365d",
+        "MeanOrderGapDays",
+        "StdOrderGapDays",
+        "HasMultipleOrders"
+      ],
+      "all_finite": true,
+      "single_order_customers": 95,
+      "future_mutation_does_not_change_features": true
+    }
+  ],
+  "scope": "Verificación MEJ-02; construye variables temporales, pero no entrena ni modifica modelos."
+}

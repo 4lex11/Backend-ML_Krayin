@@ -1,0 +1,13 @@
+{
+  "customer_id": "DEMO-001",
+  "as_of": "2018-06-30",
+  "features": {
+    "Recency": 1,
+    "Frequency": 1,
+    "Monetary_Sum": 374.48,
+    "Monetary_Mean": 187.24,
+    "Monetary_Std": 248.4773229089528,
+    "Cat_Count": 1,
+    "SubCat_Count": 2
+  }
+}

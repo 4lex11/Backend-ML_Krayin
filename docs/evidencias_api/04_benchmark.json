@@ -1,0 +1,14 @@
+{
+  "single": {
+    "runs": 20,
+    "median_ms": 5.603800000244519,
+    "max_ms": 21.44340000086231,
+    "scope": "secuencial, local, en memoria; no prueba de concurrencia ni red"
+  },
+  "batch_500": {
+    "runs": 20,
+    "median_ms": 26.56329999808804,
+    "max_ms": 46.169699999154545,
+    "scope": "secuencial, local, en memoria; no prueba de concurrencia ni red"
+  }
+}

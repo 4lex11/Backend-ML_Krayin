@@ -1,0 +1,9 @@
+# Entorno del protocolo temporal churn180-v1 (Python 3.14.6).
+joblib==1.6.0
+numpy==2.5.3
+pandas==3.0.5
+scikit-learn==1.9.1
+scipy==1.18.1
+imbalanced-learn==0.14.2
+xgboost==3.4.1
+lightgbm==4.7.0

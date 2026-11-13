@@ -1,0 +1,27 @@
+{
+  "candidate": {
+    "id": "lightgbm_original_a",
+    "family": "lightgbm",
+    "features": "original",
+    "params": {
+      "n_estimators": 100,
+      "max_depth": 2,
+      "num_leaves": 4,
+      "min_child_samples": 20,
+      "reg_lambda": 1.0,
+      "learning_rate": 0.03,
+      "random_state": 42,
+      "n_jobs": 1,
+      "verbosity": -1
+    }
+  },
+  "variant": "sigmoid",
+  "primary_policy": "top_20_percent",
+  "ranking_ties": "Customer ID ascending",
+  "k_rule": "ceil(0.20*N)",
+  "threshold_policy": "exact ceil(fraction*N) with >=, derived from calibration only; null if ties",
+  "E1_used": false,
+  "promoted": false,
+  "selection_sha256": "d31b7c3497d0fd2b7b6a5d9ff5d6ea1cc4f7b56337a82ba21e6888581de43021",
+  "note": "E1 debe ajustar el candidato congelado en su train y calibración; ningún umbral numérico de D1/D2 se traslada como umbral final."
+}
