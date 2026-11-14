@@ -5,6 +5,9 @@ http {
     access_log off;
     client_body_temp_path /tmp/nginx/body;
     proxy_temp_path /tmp/nginx/proxy;
+    fastcgi_temp_path /tmp/nginx/fastcgi;
+    uwsgi_temp_path /tmp/nginx/uwsgi;
+    scgi_temp_path /tmp/nginx/scgi;
     server {
         listen PUBLIC_PORT;
         server_name _;
