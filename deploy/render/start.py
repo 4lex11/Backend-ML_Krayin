@@ -15,6 +15,8 @@ def main() -> None:
     })
     for key in ("CHURN_TLS_CERT_FILE", "CHURN_TLS_KEY_FILE"):
         os.environ.pop(key, None)
+    for folder in ("/tmp/nginx/body", "/tmp/nginx/proxy"):
+        Path(folder).mkdir(parents=True, exist_ok=True)
     template = Path("/app/deploy/render/nginx.conf.template").read_text()
     Path("/tmp/nginx.conf").write_text(template.replace("PUBLIC_PORT", str(port)))
     os.execvp("supervisord", ["supervisord", "-c", "/app/deploy/render/supervisord.conf"])
